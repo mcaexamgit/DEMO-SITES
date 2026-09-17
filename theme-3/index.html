@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA MAISON SŪTRA — Haute Couture Salon &amp; Silhouettes</title>
+  <meta name="description" content="LA MAISON SŪTRA presents an avant-garde Indian haute couture showcase. Sculptural kurtis, gold zari accents, and runway exhibition silhouettes.">
+
+  <!-- Google Fonts: Cinzel Decorative, Italiana, Syne, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Italiana&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       01. COUTURE HEADER & MASTHEAD
+       ========================================================================== -->
+  <header class="couture-header">
+    <div class="container couture-nav-wrap">
+      
+      <!-- Mobile Toggle -->
+      <button class="couture-burger" id="coutureMenuBtn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Centered Masthead -->
+      <a href="#" class="couture-brand">
+        <span class="couture-brand-logo">LA MAISON SŪTRA</span>
+        <span class="couture-brand-sub">HAUTE COUTURE &bull; SALON PRIVÉ</span>
+      </a>
+
+      <!-- Runway Nav Links -->
+      <nav class="couture-nav-links" aria-label="Main navigation">
+        <a href="#hero" class="couture-link active">Collection XXVI</a>
+        <a href="#gallery" class="couture-link">Runway Looks (08)</a>
+        <a href="#spread" class="couture-link">Editorial Spread</a>
+        <a href="#salon" class="couture-link">Salon Privé</a>
+      </nav>
+
+      <!-- Action Icons -->
+      <div class="couture-actions">
+        <button class="couture-action-icon" id="coutureWishlistBtn" aria-label="Wishlist items">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="couture-counter" id="coutureWishlistCount">0</span>
+        </button>
+
+        <button class="couture-action-icon" id="coutureCartBtn" aria-label="Shopping bag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="couture-counter" id="coutureCartCount">1</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       02. MOBILE DRAWER
+       ========================================================================== -->
+  <div class="couture-drawer" id="coutureDrawer">
+    <div class="couture-drawer-links">
+      <a href="#hero" class="couture-drawer-link" data-close-couture>
+        <span>Collection XXVI</span>
+        <span class="roman">AUTOMNE '26</span>
+      </a>
+      <a href="#gallery" class="couture-drawer-link" data-close-couture>
+        <span>The Runway Looks</span>
+        <span class="roman">08 PIÈCES</span>
+      </a>
+      <a href="#spread" class="couture-drawer-link" data-close-couture>
+        <span>The Editorial Spread</span>
+        <span class="roman">VOGUE SALON</span>
+      </a>
+      <a href="#salon" class="couture-drawer-link" data-close-couture>
+        <span>Private Fittings</span>
+        <span class="roman">PARIS &bull; DELHI</span>
+      </a>
+    </div>
+
+    <div style="margin-top: 36px; padding-top: 24px; border-top: var(--border-plum); font-family: var(--font-couture-sans); font-size: 0.72rem; color: var(--couture-gold);">
+      <div>SALON PRIVÉ CONCIERGE &bull; WHATSAPP: +91 98110 24000</div>
+      <div style="margin-top: 6px; color: var(--couture-rose);">DELHI &bull; MUMBAI &bull; PARIS &bull; LONDON</div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       03. FULL-BLEED RUNWAY HERO EXHIBITION
+       ========================================================================== -->
+  <section class="couture-hero" id="hero">
+    <div class="couture-hero-bg">
+      <img src="images/editorial_wide.jpg" alt="La Maison Sūtra Runway Exhibition">
+    </div>
+    <div class="couture-hero-vignette"></div>
+
+    <div class="container">
+      <div class="couture-hero-content">
+        
+        <div class="couture-seal-badge">
+          <span>&bull;</span>
+          <span>COLLECTION XXVI &bull; SALON PRIVÉ</span>
+        </div>
+
+        <h1 class="couture-hero-title">
+          The Majesty<br>of Form
+        </h1>
+
+        <p class="couture-lead" style="margin-top: 20px; max-width: 580px;">
+          Architectural Indian couture sculpted in handwoven Imperial Mulberry silks, antique hammered gold zari, and statuesque silhouettes. Designed for women who inhabit presence.
+        </p>
+
+        <div class="couture-hero-actions">
+          <a href="#gallery" class="couture-btn couture-btn-gold">Examine Runway Looks</a>
+          <a href="#salon" class="couture-btn couture-btn-outline">Reserve Private Salon</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       04. EXHIBITION RUNWAY GALLERY (UNCONVENTIONAL CARDS)
+       ========================================================================== -->
+  <section class="couture-gallery-section" id="gallery">
+    <div class="container">
+      
+      <div class="gallery-head-bar">
+        <div>
+          <span class="couture-tag">Exhibition Catalogue</span>
+          <h2 class="couture-section-title">The Runway Salon (08)</h2>
+        </div>
+        <p class="couture-lead" style="max-width: 440px;">
+          Each silhouette is hand-draped to order in limited editions of seven pieces worldwide.
+        </p>
+      </div>
+
+      <div class="couture-grid">
+        
+        <!-- Look 1 -->
+        <article class="couture-card">
+          <div class="couture-card-media">
+            <span class="couture-look-tag">LOOK 01 // ANGRAKHA</span>
+            <img src="images/angrakha.jpg" alt="Le Chanderi Noir Angrakha">
+          </div>
+          <div class="couture-card-details">
+            <h3 class="couture-card-title">Le Chanderi Noir Angrakha</h3>
+            <p class="couture-card-subtitle">Asymmetric overlapping raw silk choga</p>
+            <div class="couture-price-bar">
+              <span class="couture-price">₹24,500</span>
+              <span class="couture-old-price">₹28,000</span>
+            </div>
+            <button class="couture-reserve-btn" onclick="reserveLook('Le Chanderi Noir Angrakha', 24500)">
+              Reserve Look 01
+            </button>
+          </div>
+        </article>
+
+        <!-- Look 2 -->
+        <article class="couture-card">
+          <div class="couture-card-media">
+            <span class="couture-look-tag">LOOK 02 // TAILLEUR</span>
+            <img src="images/hero.jpg" alt="Le Tailleur Kashvi Tunic">
+          </div>
+          <div class="couture-card-details">
+            <h3 class="couture-card-title">Le Tailleur Kashvi Tunic</h3>
+            <p class="couture-card-subtitle">Architectural belted tunic &amp; pant</p>
+            <div class="couture-price-bar">
+              <span class="couture-price">₹18,500</span>
+            </div>
+            <button class="couture-reserve-btn" onclick="reserveLook('Le Tailleur Kashvi Tunic', 18500)">
+              Reserve Look 02
+            </button>
+          </div>
+        </article>
+
+        <!-- Look 3 -->
+        <article class="couture-card">
+          <div class="couture-card-media">
+            <span class="couture-look-tag">LOOK 03 // CHIKANKARI</span>
+            <img src="images/chikankari.jpg" alt="L'Ombre Mehr Chikankari">
+          </div>
+          <div class="couture-card-details">
+            <h3 class="couture-card-title">L'Ombre Mehr Chikankari</h3>
+            <p class="couture-card-subtitle">Gossamer sheer shadow needlework</p>
+            <div class="couture-price-bar">
+              <span class="couture-price">₹21,000</span>
+              <span class="couture-old-price">₹24,000</span>
+            </div>
+            <button class="couture-reserve-btn" onclick="reserveLook('L\'Ombre Mehr Chikankari', 21000)">
+              Reserve Look 03
+            </button>
+          </div>
+        </article>
+
+        <!-- Look 4 -->
+        <article class="couture-card">
+          <div class="couture-card-media">
+            <span class="couture-look-tag">LOOK 04 // TUSSAR</span>
+            <img src="images/straight_kurti.jpg" alt="Le Tussar Zoya Choga">
+          </div>
+          <div class="couture-card-details">
+            <h3 class="couture-card-title">Le Tussar Zoya Choga</h3>
+            <p class="couture-card-subtitle">Minimalist column tunic with side slits</p>
+            <div class="couture-price-bar">
+              <span class="couture-price">₹16,500</span>
+            </div>
+            <button class="couture-reserve-btn" onclick="reserveLook('Le Tussar Zoya Choga', 16500)">
+              Reserve Look 04
+            </button>
+          </div>
+        </article>
+
+        <!-- Look 5 -->
+        <article class="couture-card">
+          <div class="couture-card-media">
+            <span class="couture-look-tag">LOOK 05 // ANARKALI</span>
+            <img src="images/anarkali.jpg" alt="La Robe Tara Anarkali">
+          </div>
+          <div class="couture-card-details">
+            <h3 class="couture-card-title">La Robe Tara Anarkali</h3>
+            <p class="couture-card-subtitle">Voluminous flare with gold zardozi cuffs</p>
+            <div class="couture-price-bar">
+              <span class="couture-price">₹28,500</span>
+              <span class="couture-old-price">₹32,000</span>
+            </div>
+            <button class="couture-reserve-btn" onclick="reserveLook('La Robe Tara Anarkali', 28500)">
+              Reserve Look 05
+            </button>
+          </div>
+        </article>
+
+        <!-- Look 6 -->
+        <article class="couture-card">
+          <div class="couture-card-media">
+            <span class="couture-look-tag">LOOK 06 // CHANDERI</span>
+            <img src="images/chanderi_white.jpg" alt="Le Voile Sitara Blanc">
+          </div>
+          <div class="couture-card-details">
+            <h3 class="couture-card-title">Le Voile Sitara Blanc</h3>
+            <p class="couture-card-subtitle">Handwoven ivory silk with metallic trim</p>
+            <div class="couture-price-bar">
+              <span class="couture-price">₹19,800</span>
+            </div>
+            <button class="couture-reserve-btn" onclick="reserveLook('Le Voile Sitara Blanc', 19800)">
+              Reserve Look 06
+            </button>
+          </div>
+        </article>
+
+        <!-- Look 7 -->
+        <article class="couture-card">
+          <div class="couture-card-media">
+            <span class="couture-look-tag">LOOK 07 // CO-ORD</span>
+            <img src="images/coord_set.jpg" alt="Le Co-ord Avani Palazzo">
+          </div>
+          <div class="couture-card-details">
+            <h3 class="couture-card-title">Le Co-ord Avani Palazzo</h3>
+            <p class="couture-card-subtitle">Geometric pintuck tunic with wide pants</p>
+            <div class="couture-price-bar">
+              <span class="couture-price">₹17,200</span>
+            </div>
+            <button class="couture-reserve-btn" onclick="reserveLook('Le Co-ord Avani Palazzo', 17200)">
+              Reserve Look 07
+            </button>
+          </div>
+        </article>
+
+        <!-- Look 8 -->
+        <article class="couture-card">
+          <div class="couture-card-media">
+            <span class="couture-look-tag">LOOK 08 // BANARASI</span>
+            <img src="images/lookbook_portrait.jpg" alt="Le Manteau Meera Banarasi">
+          </div>
+          <div class="couture-card-details">
+            <h3 class="couture-card-title">Le Manteau Meera Banarasi</h3>
+            <p class="couture-card-subtitle">Heirloom tissue dupatta with silver accents</p>
+            <div class="couture-price-bar">
+              <span class="couture-price">₹26,000</span>
+            </div>
+            <button class="couture-reserve-btn" onclick="reserveLook('Le Manteau Meera Banarasi', 26000)">
+              Reserve Look 08
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       05. THE CURATOR'S WARDROBE SPREAD (MAGAZINE SPREAD)
+       ========================================================================== -->
+  <section class="couture-gallery-section couture-spread-section" id="spread">
+    <div class="container">
+      <div class="spread-grid">
+        
+        <div class="spread-media">
+          <img src="images/craft_loom.jpg" alt="The Ancestral Loom of La Maison Sūtra">
+        </div>
+
+        <div>
+          <span class="couture-tag">From The Creative Director</span>
+          <h2 class="couture-section-title" style="margin-top:8px;">L'Allure Royale</h2>
+          
+          <blockquote class="spread-quote">
+            “We reject the transient pulse of fast fashion to sculpt silhouettes that hold museum-grade gravitas and royal Indian poise.”
+          </blockquote>
+
+          <p class="couture-lead">
+            Every garment in Collection XXVI emerges from up to 48 hours of uninterrupted handloom weaving across Maheshwar and Varanasi. Each piece carries an individually stamped Certificate of Authenticity.
+          </p>
+
+          <div style="margin-top: 28px;">
+            <a href="#salon" class="couture-btn couture-btn-gold">Request Private Consultation</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       06. SALON PRIVÉ / PRIVATE FITTING BOOKING
+       ========================================================================== -->
+  <section class="couture-gallery-section salon-booking-section" id="salon">
+    <div class="container">
+      <div class="salon-card">
+        
+        <span class="couture-tag">By Private Invitation</span>
+        <h2 class="couture-section-title" style="margin: 12px 0;">The Salon Privé</h2>
+        <p class="couture-lead" style="max-width: 540px; margin: 0 auto;">
+          Experience bespoke measurements, private fabric dockets, and personalized drape consultations with our master couturiers.
+        </p>
+
+        <div class="salon-locations">
+          <span>NEW DELHI</span>
+          <span>&bull;</span>
+          <span>MUMBAI</span>
+          <span>&bull;</span>
+          <span>PARIS</span>
+          <span>&bull;</span>
+          <span>LONDON</span>
+        </div>
+
+        <form id="salonForm" class="salon-form">
+          <input type="text" placeholder="Patron Full Name" required>
+          <input type="email" placeholder="Patron Email Address" required>
+          <button type="submit" class="couture-btn couture-btn-gold">
+            Request Salon Privé Invitation
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       07. FOOTER
+       ========================================================================== -->
+  <footer class="couture-footer">
+    <div class="container">
+      
+      <div class="couture-footer-grid">
+        <div>
+          <span style="font-family:var(--font-masthead); font-size:1.8rem; letter-spacing:0.2em; color:var(--couture-gold);">
+            LA MAISON SŪTRA
+          </span>
+          <p style="font-size:0.82rem; color:var(--couture-rose); line-height:1.7; margin-top:10px; max-width:320px;">
+            An avant-garde Indian haute couture salon sculpting architectural ethnic silhouettes with royal heritage weaves and uncompromised discretion.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="couture-footer-col-title">Runway Collections</h4>
+          <div class="couture-footer-links">
+            <a href="#gallery" class="couture-footer-link">Collection XXVI (Automne)</a>
+            <a href="#gallery" class="couture-footer-link">The Imperial Angrakha</a>
+            <a href="#gallery" class="couture-footer-link">Varanasi Zari Heirlooms</a>
+            <a href="#gallery" class="couture-footer-link">L'Ombre Chikankari</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="couture-footer-col-title">The Salons</h4>
+          <div class="couture-footer-links">
+            <a href="#salon" class="couture-footer-link">New Delhi Heritage Atelier</a>
+            <a href="#salon" class="couture-footer-link">Mumbai Sea Face Salon</a>
+            <a href="#salon" class="couture-footer-link">Paris Fashion Week Showroom</a>
+            <a href="#salon" class="couture-footer-link">London Mayfair Suite</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="couture-footer-col-title">Client Relations</h4>
+          <div class="couture-footer-links">
+            <a href="#" class="couture-footer-link">Made-to-Measure Protocol</a>
+            <a href="#" class="couture-footer-link">Armored Courier Dispatch</a>
+            <a href="#" class="couture-footer-link">Certificate of Authenticity</a>
+            <a href="#" class="couture-footer-link">WhatsApp Concierge Desk</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-top:24px; border-top:var(--border-plum); display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-family:var(--font-couture-sans); font-size:0.68rem; color:rgba(255,255,255,0.4);">
+        <div>&copy; 2026 LA MAISON SŪTRA. ALL RIGHTS RESERVED. HAUTE COUTURE.</div>
+        <div style="display:flex; gap:16px;">
+          <span>PRIVATE TERMS</span>
+          <span>CURRENCY: INR (₹)</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="couture-toast" id="coutureToast">Look reserved in salon bag</div>
+
+  <!-- Floating 3-Button Theme Switcher Dock -->
+  <nav class="theme-dock" aria-label="Theme switcher">
+    <a href="../index.html" class="theme-dock-btn home-btn" title="All Themes">&larr; SELECTOR</a>
+    <a href="../theme-1/index.html" class="theme-dock-btn">THEME 1</a>
+    <a href="../theme-2/index.html" class="theme-dock-btn">THEME 2</a>
+    <a href="../theme-3/index.html" class="theme-dock-btn active">THEME 3</a>
+  </nav>
+
+  <!-- Lightweight Script -->
+  <script>
+    let cartCount = 1;
+    let wishlistCount = 0;
+
+    function showToast(msg) {
+      const t = document.getElementById('coutureToast');
+      t.textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 3000);
+    }
+
+    function reserveLook(title, price) {
+      cartCount++;
+      document.getElementById('coutureCartCount').textContent = cartCount;
+      showToast(`Reserved ${title} (₹${price.toLocaleString('en-IN')}) for Private Fitting`);
+    }
+
+    // Mobile Menu
+    const menuBtn = document.getElementById('coutureMenuBtn');
+    const drawer = document.getElementById('coutureDrawer');
+    menuBtn.addEventListener('click', () => {
+      const open = drawer.classList.toggle('active');
+      menuBtn.classList.toggle('active');
+      document.body.classList.toggle('no-scroll', open);
+    });
+
+    document.querySelectorAll('[data-close-couture]').forEach(link => {
+      link.addEventListener('click', () => {
+        drawer.classList.remove('active');
+        menuBtn.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+      });
+    });
+
+    // Wishlist Toggle
+    document.getElementById('coutureWishlistBtn').addEventListener('click', () => {
+      wishlistCount = wishlistCount === 0 ? 1 : 0;
+      document.getElementById('coutureWishlistCount').textContent = wishlistCount;
+      showToast(wishlistCount > 0 ? 'Saved to Private Lookbook' : 'Lookbook updated');
+    });
+
+    // Cart Button
+    document.getElementById('coutureCartBtn').addEventListener('click', () => {
+      showToast(`Salon Bag contains ${cartCount} reserved haute couture pieces`);
+    });
+
+    // Salon Booking
+    document.getElementById('salonForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      showToast('Salon Privé invitation request registered. Our concierge will contact you.');
+      e.target.reset();
+    });
+  </script>
+
+  <!-- Floating Theme Showcase Navigator -->
+  <a href="../index.html" class="theme-switcher-pill" aria-label="Return to Theme Showcase">
+    <span>&larr; THEME SHOWCASE</span>
+    <span class="theme-badge">03 / 03</span>
+  </a>
+</body>
+</html>

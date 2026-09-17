@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SŪTRA TANTU — The Craft &amp; Materiality Edition</title>
+  <meta name="description" content="SŪTRA TANTU explores contemporary Indian ethnic fashion through the tactile lens of raw handloom materials, pit-loom weaving, and natural herbal dyes.">
+
+  <!-- Google Fonts: Fraunces (warm curvy serif), Space Mono (artisan monospace), Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       01. WEAVE TICKER BAR
+       ========================================================================== -->
+  <aside class="tantu-ticker-bar" aria-label="Craft Announcement">
+    <div class="tantu-ticker-track">
+      <div>BATCH 04 // HARVEST EDIT 2026</div>
+      <div>&bull;</div>
+      <div>MAHESHWAR &amp; CHANDERI PIT-LOOM WEAVES NOW DOCKED</div>
+      <div>&bull;</div>
+      <div>COMPLIMENTARY ARTISANAL GARMENT DOCKET OVER ₹5,000</div>
+      <div>&bull;</div>
+      <div>100% GOTS CERTIFIED ORGANIC MADDER &amp; INDIGO DYES</div>
+      <div>&bull;</div>
+      <div>BATCH 04 // HARVEST EDIT 2026</div>
+      <div>&bull;</div>
+      <div>MAHESHWAR &amp; CHANDERI PIT-LOOM WEAVES NOW DOCKED</div>
+      <div>&bull;</div>
+      <div>COMPLIMENTARY ARTISANAL GARMENT DOCKET OVER ₹5,000</div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       02. TEXTILE LABEL HEADER (INNOVATIVE CONCEPT A)
+       ========================================================================== -->
+  <header class="tantu-header" id="tantuHeader">
+    <div class="container tantu-nav-container">
+      
+      <!-- Mobile Toggle -->
+      <button class="tantu-menu-btn" id="tantuMenuBtn" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Brand Textile Label -->
+      <a href="#" class="tantu-brand">
+        <span class="tantu-brand-title">SŪTRA TANTU</span>
+        <span class="tantu-brand-spec">ATELIER SPECIMEN NO. 02 &bull; NEW DELHI</span>
+      </a>
+
+      <!-- Weave Tabs Navigation -->
+      <nav class="tantu-nav-tabs" aria-label="Main Navigation">
+        <a href="#hero" class="tantu-nav-tab active">[ 01 SILHOUETTES ]</a>
+        <a href="#registry" class="tantu-nav-tab">[ 02 MATERIAL LAB ]</a>
+        <a href="#specimens" class="tantu-nav-tab">[ 03 THE EDIT ]</a>
+        <a href="#timeline" class="tantu-nav-tab">[ 04 PIT-LOOM RITUAL ]</a>
+        <a href="#journal" class="tantu-nav-tab">[ 05 KARIGAR DIARY ]</a>
+      </nav>
+
+      <!-- Action Utilities -->
+      <div class="tantu-actions">
+        <button class="tantu-action-btn" id="wishlistBtn" aria-label="Wishlist items">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="tantu-badge" id="tantuWishlistCount">0</span>
+        </button>
+
+        <button class="tantu-action-btn" id="cartBtn" aria-label="Shopping bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="tantu-badge" id="tantuCartCount">1</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       03. MOBILE DRAWER
+       ========================================================================== -->
+  <div class="tantu-mobile-drawer" id="tantuMobileDrawer">
+    <div class="tantu-mobile-links">
+      <a href="#specimens" class="tantu-mobile-link" data-close-mobile>
+        <span>The Kurtis</span>
+        <span class="spec">[ BATCH 04 ]</span>
+      </a>
+      <a href="#registry" class="tantu-mobile-link" data-close-mobile>
+        <span>Material Lab</span>
+        <span class="spec">[ 4 FIBERS ]</span>
+      </a>
+      <a href="#timeline" class="tantu-mobile-link" data-close-mobile>
+        <span>The 48h Weave</span>
+        <span class="spec">[ PIT-LOOM ]</span>
+      </a>
+      <a href="#journal" class="tantu-mobile-link" data-close-mobile>
+        <span>Karigar Notes</span>
+        <span class="spec">[ DISPATCH ]</span>
+      </a>
+    </div>
+
+    <div style="margin-top: 32px; padding-top: 20px; border-top: var(--border-stitch); font-family: var(--font-mono); font-size: 0.72rem; color: var(--tantu-clay);">
+      <div>CLUSTER REGISTRY: MAHESHWAR &bull; CHANDERI &bull; KUTCH</div>
+      <div style="margin-top: 6px;">CONCIERGE: +91 (0) 98110 24000</div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       04. ASYMMETRIC CRAFT HERO (INNOVATIVE CONCEPT B)
+       ========================================================================== -->
+  <section class="tantu-hero" id="hero">
+    <div class="tantu-hero-layout">
+      
+      <!-- Left: Story & Artisan Docket -->
+      <div class="tantu-hero-story">
+        <div class="tantu-docket-tag">
+          <span>&bull;</span>
+          <span>AUTUMN / FESTIVE 2026 HARVEST</span>
+        </div>
+
+        <h1 class="tantu-hero-title tantu-hero-headline">
+          Weft, Warp &amp; <span class="italic">Living Memory</span>
+        </h1>
+
+        <p class="tantu-lead">
+          Contemporary Indian silhouettes shaped by the visceral tactility of unhurried handloom fibers. Every thread is spun on ancestral charkhas and dyed with botanical roots.
+        </p>
+
+        <div class="tantu-hero-cta">
+          <a href="#specimens" class="tantu-btn tantu-btn-terracotta">Examine The Collection</a>
+          <a href="#registry" class="tantu-btn tantu-btn-stitch">Explore Material Lab</a>
+        </div>
+
+        <!-- Overlapping Artisan Docket Card -->
+        <div class="tantu-docket-card">
+          <div class="tantu-docket-grid">
+            <div class="docket-field">
+              <span class="docket-label">WEAVE CLUSTER</span>
+              <span class="docket-val">Maheshwar, MP</span>
+            </div>
+            <div class="docket-field">
+              <span class="docket-label">WARP PROFILE</span>
+              <span class="docket-val">80s Fine Mulberry</span>
+            </div>
+            <div class="docket-field">
+              <span class="docket-label">BOTANICAL DYES</span>
+              <span class="docket-val">Madder &amp; Pomegranate</span>
+            </div>
+            <div class="docket-field">
+              <span class="docket-label">HANDLOOM TIME</span>
+              <span class="docket-val">42h per Silhouette</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Warm Sepia Visual with Interactive Swatch Dial -->
+      <div class="tantu-hero-visual">
+        <img src="images/hero.jpg" alt="Indian model in tailored terracotta craft kurti" class="tantu-hero-img" id="heroMainImg">
+        
+        <!-- Interactive Tactile Swatch Dial -->
+        <div class="tantu-swatch-dial">
+          <div style="font-family:var(--font-mono); font-size:0.65rem; color:var(--tantu-umber);">
+            <strong>TACTILE SWATCH:</strong> <span id="currentSwatchName">01 Unbleached Chanderi</span>
+          </div>
+          <div class="swatch-chips">
+            <button class="swatch-chip active" style="background:#EBE3D3;" title="Unbleached Chanderi" data-img="images/hero.jpg" data-name="01 Unbleached Chanderi"></button>
+            <button class="swatch-chip" style="background:#B85336;" title="Madder Terracotta Tussar" data-img="images/angrakha.jpg" data-name="02 Madder Rust Tussar"></button>
+            <button class="swatch-chip" style="background:#2C1F19;" title="Noir Raw Silk" data-img="images/straight_kurti.jpg" data-name="03 Noir Handspun Silk"></button>
+            <button class="swatch-chip" style="background:#F7F4EE;" title="Ivory Mulmul Cotton" data-img="images/chanderi_white.jpg" data-name="04 Ivory Mulmul Cotton"></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       05. MATERIAL REGISTRY (INNOVATIVE CONCEPT C)
+       ========================================================================== -->
+  <section class="section material-registry-section" id="registry">
+    <div class="container">
+      
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px;">
+        <div>
+          <span class="tantu-docket-tag">The Material Laboratory</span>
+          <h2 class="tantu-section-title" style="margin-top:8px;">Four Ancestral Fibers</h2>
+        </div>
+        <p class="tantu-lead" style="max-width:440px;">
+          We believe luxury begins at the soil. Trace each kurti back to its rainfed crop, pit-loom station, and botanical dye vat.
+        </p>
+      </div>
+
+      <div class="registry-track">
+        
+        <!-- Specimen 01 -->
+        <article class="material-specimen-card">
+          <span class="specimen-code">SPECIMEN // 01</span>
+          <h3 class="specimen-title">Ahimsa Mulberry Silk</h3>
+          <p style="font-size:0.82rem; color:#4A3A32; line-height:1.6;">
+            Cultivated without harm to cocoons. Spun by women's collectives in Bengal into a gossamer yarn with natural raw slubs.
+          </p>
+          <div class="specimen-meta-table">
+            <div>WEIGHT: 65 GSM (Featherweight)</div>
+            <div>WEAVE: 2-Ply Plain Loom</div>
+            <div>REGION: Murshidabad, WB</div>
+          </div>
+        </article>
+
+        <!-- Specimen 02 -->
+        <article class="material-specimen-card">
+          <span class="specimen-code">SPECIMEN // 02</span>
+          <h3 class="specimen-title">Rainfed Khadi Mulmul</h3>
+          <p style="font-size:0.82rem; color:#4A3A32; line-height:1.6;">
+            Hand-ginned indigenous desi cotton grown exclusively with monsoon rainfall. Superlative skin breathability in tropical heat.
+          </p>
+          <div class="specimen-meta-table">
+            <div>WEIGHT: 90 GSM (Semi-Sheer)</div>
+            <div>WEAVE: Ambar Charkha 100s</div>
+            <div>REGION: Wardha, MH</div>
+          </div>
+        </article>
+
+        <!-- Specimen 03 -->
+        <article class="material-specimen-card">
+          <span class="specimen-code">SPECIMEN // 03</span>
+          <h3 class="specimen-title">Hand-Carved Teak Block</h3>
+          <p style="font-size:0.82rem; color:#4A3A32; line-height:1.6;">
+            Geometric patterns chiseled by 4th-generation woodcarvers. Hand-stamped onto wet fabric using fermented pomegranate and iron-rust paste.
+          </p>
+          <div class="specimen-meta-table">
+            <div>DYE AGENT: Harda &amp; Iron Slag</div>
+            <div>PROCESS: Double Mud-Resist (Dabu)</div>
+            <div>REGION: Bagru, RJ</div>
+          </div>
+        </article>
+
+        <!-- Specimen 04 -->
+        <article class="material-specimen-card">
+          <span class="specimen-code">SPECIMEN // 04</span>
+          <h3 class="specimen-title">Pure Antique Silver Zari</h3>
+          <p style="font-size:0.82rem; color:#4A3A32; line-height:1.6;">
+            Real silver foil flattened over pure silk core threads. Yields a discreet antique patina rather than artificial modern glitter.
+          </p>
+          <div class="specimen-meta-table">
+            <div>PURITY: 98.5% Sterling Silver</div>
+            <div>MOTIF: Geometric Kinaris</div>
+            <div>REGION: Surat, GJ</div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       06. ASYMMETRIC PRODUCT SPECIMENS (THEME 2)
+       ========================================================================== -->
+  <section class="section tantu-products-section" id="specimens">
+    <div class="container">
+      
+      <div style="text-align:center; max-width:640px; margin: 0 auto 36px;">
+        <span class="tantu-docket-tag">Handcrafted Silhouettes</span>
+        <h2 class="tantu-section-title" style="margin-top:8px;">The Artisanal Batch No. 04</h2>
+      </div>
+
+      <!-- Filter Strip -->
+      <div class="tantu-filter-strip">
+        <button class="tantu-filter-tag active" data-tfilter="all">[ ALL SPECIMENS ]</button>
+        <button class="tantu-filter-tag" data-tfilter="chanderi">[ CHANDERI WEAVES ]</button>
+        <button class="tantu-filter-tag" data-tfilter="madder">[ MADDER RUST ]</button>
+        <button class="tantu-filter-tag" data-tfilter="tussar">[ RAW TUSSAR ]</button>
+        <button class="tantu-filter-tag" data-tfilter="coords">[ ARTISAN CO-ORDS ]</button>
+      </div>
+
+      <!-- Asymmetric Product Grid -->
+      <div class="tantu-product-grid">
+        
+        <!-- Product 1 -->
+        <article class="tantu-product-card" data-tcat="madder">
+          <div class="tantu-card-media">
+            <span class="tantu-index-badge">01 // ANGRAKHA</span>
+            <img src="images/angrakha.jpg" alt="The Madder Asymmetric Angrakha">
+          </div>
+          <div class="tantu-card-body">
+            <h3 class="tantu-card-title">The Madder Asymmetric Angrakha</h3>
+            <p class="tantu-card-spec-tag">WEAVE: 110-GSM PIT-LOOM TUSSAR | DYE: MADDER ROOT</p>
+            <div class="tantu-card-price-row">
+              <span class="tantu-price">₹24,500</span>
+              <span class="tantu-old-price">₹28,000</span>
+            </div>
+            <div class="tantu-card-actions">
+              <button class="tantu-card-btn" onclick="tantuAddToCart('The Madder Asymmetric Angrakha', 24500)">
+                Reserve Piece &bull; Size M
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="tantu-product-card" data-tcat="coords">
+          <div class="tantu-card-media">
+            <span class="tantu-index-badge">02 // CO-ORD</span>
+            <img src="images/hero.jpg" alt="The Kashvi Architectural Tunic">
+          </div>
+          <div class="tantu-card-body">
+            <h3 class="tantu-card-title">The Kashvi Architectural Tunic</h3>
+            <p class="tantu-card-spec-tag">WEAVE: RAINFED COTTON KHADI | BELTED SILHOUETTE</p>
+            <div class="tantu-card-price-row">
+              <span class="tantu-price">₹18,500</span>
+            </div>
+            <div class="tantu-card-actions">
+              <button class="tantu-card-btn" onclick="tantuAddToCart('The Kashvi Architectural Tunic', 18500)">
+                Reserve Piece &bull; Size S
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="tantu-product-card" data-tcat="chanderi">
+          <div class="tantu-card-media">
+            <span class="tantu-index-badge">03 // CHIKANKARI</span>
+            <img src="images/chikankari.jpg" alt="The Mehr Shadow-Work Mulmul">
+          </div>
+          <div class="tantu-card-body">
+            <h3 class="tantu-card-title">The Mehr Shadow-Work Mulmul</h3>
+            <p class="tantu-card-spec-tag">WEAVE: 100-COUNT DESI MULMUL | LUCKNOW NEEDLEWORK</p>
+            <div class="tantu-card-price-row">
+              <span class="tantu-price">₹21,000</span>
+              <span class="tantu-old-price">₹24,000</span>
+            </div>
+            <div class="tantu-card-actions">
+              <button class="tantu-card-btn" onclick="tantuAddToCart('The Mehr Shadow-Work Mulmul', 21000)">
+                Reserve Piece &bull; Size M
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="tantu-product-card" data-tcat="tussar">
+          <div class="tantu-card-media">
+            <span class="tantu-index-badge">04 // STRAIGHT</span>
+            <img src="images/straight_kurti.jpg" alt="The Zoya Raw Umber Kurta">
+          </div>
+          <div class="tantu-card-body">
+            <h3 class="tantu-card-title">The Zoya Raw Umber Kurta</h3>
+            <p class="tantu-card-spec-tag">WEAVE: SLUBBED WILD TUSSAR | CONCEALED POCKETS</p>
+            <div class="tantu-card-price-row">
+              <span class="tantu-price">₹16,500</span>
+            </div>
+            <div class="tantu-card-actions">
+              <button class="tantu-card-btn" onclick="tantuAddToCart('The Zoya Raw Umber Kurta', 16500)">
+                Reserve Piece &bull; Size L
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="tantu-product-card" data-tcat="madder">
+          <div class="tantu-card-media">
+            <span class="tantu-index-badge">05 // ANARKALI</span>
+            <img src="images/anarkali.jpg" alt="The Tara Handloom Sweep Anarkali">
+          </div>
+          <div class="tantu-card-body">
+            <h3 class="tantu-card-title">The Tara Handloom Sweep Anarkali</h3>
+            <p class="tantu-card-spec-tag">WEAVE: 4.8 METERS OF HANDWOVEN FLARE | ZARI CUFFS</p>
+            <div class="tantu-card-price-row">
+              <span class="tantu-price">₹28,500</span>
+              <span class="tantu-old-price">₹32,000</span>
+            </div>
+            <div class="tantu-card-actions">
+              <button class="tantu-card-btn" onclick="tantuAddToCart('The Tara Handloom Sweep Anarkali', 28500)">
+                Reserve Piece &bull; Size M
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="tantu-product-card" data-tcat="chanderi">
+          <div class="tantu-card-media">
+            <span class="tantu-index-badge">06 // CHANDERI</span>
+            <img src="images/chanderi_white.jpg" alt="The Sitara Translucent Kurta">
+          </div>
+          <div class="tantu-card-body">
+            <h3 class="tantu-card-title">The Sitara Translucent Kurta</h3>
+            <p class="tantu-card-spec-tag">WEAVE: PURE CHANDERI SILK | STERLING ZARI PIPING</p>
+            <div class="tantu-card-price-row">
+              <span class="tantu-price">₹19,800</span>
+            </div>
+            <div class="tantu-card-actions">
+              <button class="tantu-card-btn" onclick="tantuAddToCart('The Sitara Translucent Kurta', 19800)">
+                Reserve Piece &bull; Size S
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 7 -->
+        <article class="tantu-product-card" data-tcat="coords">
+          <div class="tantu-card-media">
+            <span class="tantu-index-badge">07 // PALAZZO SET</span>
+            <img src="images/coord_set.jpg" alt="The Avani Block-Print Set">
+          </div>
+          <div class="tantu-card-body">
+            <h3 class="tantu-card-title">The Avani Block-Print Set</h3>
+            <p class="tantu-card-spec-tag">WEAVE: MUD-RESIST DABU ON MULMUL | RELAXED FIT</p>
+            <div class="tantu-card-price-row">
+              <span class="tantu-price">₹17,200</span>
+            </div>
+            <div class="tantu-card-actions">
+              <button class="tantu-card-btn" onclick="tantuAddToCart('The Avani Block-Print Set', 17200)">
+                Reserve Piece &bull; Size M
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 8 -->
+        <article class="tantu-product-card" data-tcat="chanderi">
+          <div class="tantu-card-media">
+            <span class="tantu-index-badge">08 // HEIRLOOM</span>
+            <img src="images/lookbook_portrait.jpg" alt="The Meera Banarasi Kurti &amp; Veil">
+          </div>
+          <div class="tantu-card-body">
+            <h3 class="tantu-card-title">The Meera Banarasi Kurti &amp; Veil</h3>
+            <p class="tantu-card-spec-tag">WEAVE: TISSUE DUPATTA WITH HERITAGE BUTI BORDERS</p>
+            <div class="tantu-card-price-row">
+              <span class="tantu-price">₹26,000</span>
+            </div>
+            <div class="tantu-card-actions">
+              <button class="tantu-card-btn" onclick="tantuAddToCart('The Meera Banarasi Kurti &amp; Veil', 26000)">
+                Reserve Piece &bull; Size L
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       07. THE 48-HOUR PIT-LOOM WEAVING RITUAL
+       ========================================================================== -->
+  <section class="section tantu-timeline-section" id="timeline">
+    <div class="container">
+      
+      <div style="text-align:center; max-width:680px; margin: 0 auto;">
+        <span class="tantu-docket-tag">Unhurried Craftsmanship</span>
+        <h2 class="tantu-section-title" style="margin-top:8px;">The 48-Hour Pit-Loom Ritual</h2>
+        <p class="tantu-lead" style="margin-top:12px;">
+          Fast fashion creates a garment in 12 minutes. We dedicate up to two full days of rhythmic handloom labor to a single kurti.
+        </p>
+      </div>
+
+      <div class="tantu-timeline-grid">
+        
+        <div class="timeline-step">
+          <span class="step-num">01</span>
+          <h3 class="step-title">Hand Charkha Spinning</h3>
+          <p class="step-desc">
+            Raw organic fibers are gently twisted by hand to retain the natural elasticity and breathable micro-gaps of indigenous Indian cottons.
+          </p>
+        </div>
+
+        <div class="timeline-step">
+          <span class="step-num">02</span>
+          <h3 class="step-title">14-Day Vat Fermentation</h3>
+          <p class="step-desc">
+            Natural indigo cakes, madder roots, and crushed pomegranate rinds steep in subterranean clay vats under the Rajasthan sun.
+          </p>
+        </div>
+
+        <div class="timeline-step">
+          <span class="step-num">03</span>
+          <h3 class="step-title">Pit-Loom Interlacing</h3>
+          <p class="step-desc">
+            The weaver sits in a pit beneath the loom floor, rhythmically guiding the flying wooden shuttle with synchronized foot pedals.
+          </p>
+        </div>
+
+        <div class="timeline-step">
+          <span class="step-num">04</span>
+          <h3 class="step-title">Bespoke Atelier Hemming</h3>
+          <p class="step-desc">
+            Garments are hand-cut against wooden measurement templates and finished with French seams and concealed seam pockets.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       08. KARIGAR JOURNAL REFLECTIONS
+       ========================================================================== -->
+  <section class="section tantu-journal-section" id="journal">
+    <div class="container">
+      
+      <div style="text-align:center; max-width:600px; margin:0 auto;">
+        <span class="tantu-docket-tag">Textile Historian Reviews</span>
+        <h2 class="tantu-section-title" style="margin-top:8px;">Patron Reflections</h2>
+      </div>
+
+      <div class="tantu-journal-grid">
+        
+        <div class="journal-card">
+          <p class="journal-quote">
+            “The Tantu Angrakha feels like holding a piece of living archaeological textile. You can sense the human pressure of the wooden loom in every inch of the fabric.”
+          </p>
+          <div class="journal-author">
+            <strong>DR. ANANYA SEN</strong> &bull; Textile Curator, National Museum
+          </div>
+        </div>
+
+        <div class="journal-card">
+          <p class="journal-quote">
+            “In an age of synthetic polyester copies, Sūtra Tantu’s commitment to pure madder root dyeing and certified mulberry silks is nothing short of sacred.”
+          </p>
+          <div class="journal-author">
+            <strong>KAVITA VARMA</strong> &bull; Sustainable Fashion Author
+          </div>
+        </div>
+
+        <div class="journal-card">
+          <p class="journal-quote">
+            “The cut of the architectural tunic is brilliant. It bridges ancestral Maheshwar weaving with the effortless poise needed in a contemporary boardroom.”
+          </p>
+          <div class="journal-author">
+            <strong>MALINI CHOPRA</strong> &bull; Architect &amp; Urbanist, Mumbai
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       09. NEWSLETTER & ATELIER FOOTER
+       ========================================================================== -->
+  <section class="section tantu-newsletter">
+    <div class="container" style="max-width:620px; text-align:center;">
+      <span class="tantu-docket-tag">Dispatch Subscription</span>
+      <h2 class="tantu-section-title" style="margin:12px 0;">The Karigar Gazette</h2>
+      <p style="font-size:0.9rem; color:#4A3A32; margin-bottom:24px;">
+        Receive seasonal harvesting notes, limited batch announcements, and essays on indigenous weaving clusters.
+      </p>
+      <form id="tantuNewsletterForm" style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center;">
+        <input type="email" placeholder="Enter patron email address..." required style="flex:1; min-width:240px; padding:12px 16px; background:#FAF8F4; border:1px solid var(--tantu-clay);">
+        <button type="submit" class="tantu-btn tantu-btn-terracotta">Enroll in Gazette</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="tantu-footer">
+    <div class="container">
+      <div class="tantu-footer-grid">
+        <div>
+          <span class="tantu-footer-brand-title">SŪTRA TANTU</span>
+          <p class="tantu-footer-desc">
+            A material-first Indian ethnic atelier dedicated to the preservation and contemporary elevation of indigenous pit-loom handweaves.
+          </p>
+          <div style="font-family:var(--font-mono); font-size:0.68rem; color:var(--tantu-gold); margin-top:12px;">
+            CLUSTERS: MAHESHWAR &bull; CHANDERI &bull; KUTCH &bull; BENGAL
+          </div>
+        </div>
+
+        <div>
+          <h4 class="tantu-footer-col-title">Weaves</h4>
+          <div class="tantu-footer-links">
+            <a href="#specimens" class="tantu-footer-link">Rainfed Desi Mulmul</a>
+            <a href="#specimens" class="tantu-footer-link">Pit-Loom Chanderi</a>
+            <a href="#specimens" class="tantu-footer-link">Ahimsa Silk Tussar</a>
+            <a href="#specimens" class="tantu-footer-link">Madder Root Ensembles</a>
+            <a href="#specimens" class="tantu-footer-link">Hand-Carved Co-ords</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="tantu-footer-col-title">Atelier Care</h4>
+          <div class="tantu-footer-links">
+            <a href="#" class="tantu-footer-link">Handloom Washing Rituals</a>
+            <a href="#" class="tantu-footer-link">Custom Made-to-Measure</a>
+            <a href="#" class="tantu-footer-link">Cluster Visit Appointments</a>
+            <a href="#" class="tantu-footer-link">Exchanges &amp; Alterations</a>
+            <a href="#" class="tantu-footer-link">WhatsApp Karigar Desk</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="tantu-footer-col-title">Conscious Luxury</h4>
+          <div class="tantu-footer-links">
+            <a href="#" class="tantu-footer-link">Fair Wage Transparency</a>
+            <a href="#" class="tantu-footer-link">Zero Chemical Mordants</a>
+            <a href="#" class="tantu-footer-link">Heirloom Repair Warranty</a>
+            <a href="#" class="tantu-footer-link">The Tantu Archive</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tantu-footer-bottom">
+        <div>&copy; 2026 SŪTRA TANTU ATELIER. ALL SPECIMEN DESIGNS REGISTERED.</div>
+        <div style="display:flex; gap:16px;">
+          <span>RAW MATERIAL CONCORDAT</span>
+          <span>CURRENCY: INR (₹)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="tantu-toast" id="tantuToast">Piece reserved in atelier bag</div>
+
+  <!-- Floating 3-Button Theme Switcher Dock -->
+  <nav class="theme-dock" aria-label="Theme switcher">
+    <a href="../index.html" class="theme-dock-btn home-btn" title="All Themes">&larr; SELECTOR</a>
+    <a href="../theme-1/index.html" class="theme-dock-btn">THEME 1</a>
+    <a href="../theme-2/index.html" class="theme-dock-btn active">THEME 2</a>
+    <a href="../theme-3/index.html" class="theme-dock-btn">THEME 3</a>
+  </nav>
+
+  <!-- Lightweight Script -->
+  <script>
+    let cartCount = 1;
+    let wishlistCount = 0;
+
+    function showToast(msg) {
+      const t = document.getElementById('tantuToast');
+      t.textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 3000);
+    }
+
+    function tantuAddToCart(name, price) {
+      cartCount++;
+      document.getElementById('tantuCartCount').textContent = cartCount;
+      showToast(`Reserved ${name} (₹${price.toLocaleString('en-IN')}) in bag`);
+    }
+
+    // Swatch Dial Handler
+    document.querySelectorAll('.swatch-chip').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.swatch-chip').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const img = btn.getAttribute('data-img');
+        const name = btn.getAttribute('data-name');
+        document.getElementById('heroMainImg').src = img;
+        document.getElementById('currentSwatchName').textContent = name;
+        showToast(`Inspecting swatch: ${name}`);
+      });
+    });
+
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('tantuMenuBtn');
+    const drawer = document.getElementById('tantuMobileDrawer');
+    menuBtn.addEventListener('click', () => {
+      const open = drawer.classList.toggle('active');
+      menuBtn.classList.toggle('active');
+      document.body.classList.toggle('no-scroll', open);
+    });
+
+    document.querySelectorAll('[data-close-mobile]').forEach(link => {
+      link.addEventListener('click', () => {
+        drawer.classList.remove('active');
+        menuBtn.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+      });
+    });
+
+    // Filter Buttons
+    document.querySelectorAll('.tantu-filter-tag').forEach(tag => {
+      tag.addEventListener('click', () => {
+        document.querySelectorAll('.tantu-filter-tag').forEach(t => t.classList.remove('active'));
+        tag.classList.add('active');
+        const f = tag.getAttribute('data-tfilter');
+        document.querySelectorAll('.tantu-product-card').forEach(card => {
+          const cat = card.getAttribute('data-tcat');
+          if (f === 'all' || cat === f) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Wishlist Toggle
+    document.getElementById('wishlistBtn').addEventListener('click', () => {
+      wishlistCount = wishlistCount === 0 ? 1 : 0;
+      document.getElementById('tantuWishlistCount').textContent = wishlistCount;
+      showToast(wishlistCount > 0 ? 'Specimen pinned to artisan wishlist' : 'Wishlist cleared');
+    });
+
+    // Cart Button Click
+    document.getElementById('cartBtn').addEventListener('click', () => {
+      showToast(`Atelier Bag contains ${cartCount} handcrafted pieces`);
+    });
+
+    // Newsletter
+    document.getElementById('tantuNewsletterForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      showToast('Welcome to The Karigar Gazette');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>

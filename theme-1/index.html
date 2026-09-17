@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SŪTRA ATELIER &mdash; Modern Indian Ethnic Fashion &amp; Kurtis</title>
+  <meta name="description" content="SŪTRA Atelier crafts timeless Indian ethnic silhouettes, handwoven Chanderi kurtis, artisanal Anarkalis, and modern co-ord sets with pure architectural minimalism.">
+  
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif), Plus Jakarta Sans (Clean Body/UI), Italiana -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2 &bull; family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Italiana&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       01. ANNOUNCEMENT MARQUEE BAR
+       ========================================================================== -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <div class="announcement-ticker">
+      <div class="ticker-item">AUTUMN / WINTER 2026 EDITORIAL</div>
+      <span class="ticker-dot"></span>
+      <div class="ticker-item">COMPLIMENTARY WORLDWIDE EXPRESS SHIPPING OVER ₹5,000</div>
+      <span class="ticker-dot"></span>
+      <div class="ticker-item">HAND-WOVEN CHANDERI &amp; MULMUL COLLECTION NOW LIVE</div>
+      <span class="ticker-dot"></span>
+      <div class="ticker-item">PRIVATE ATELIER APPOINTMENTS IN DELHI &amp; MUMBAI</div>
+      <span class="ticker-dot"></span>
+      <div class="ticker-item">AUTUMN / WINTER 2026 EDITORIAL</div>
+      <span class="ticker-dot"></span>
+      <div class="ticker-item">COMPLIMENTARY WORLDWIDE EXPRESS SHIPPING OVER ₹5,000</div>
+      <span class="ticker-dot"></span>
+      <div class="ticker-item">HAND-WOVEN CHANDERI &amp; MULMUL COLLECTION NOW LIVE</div>
+      <span class="ticker-dot"></span>
+      <div class="ticker-item">PRIVATE ATELIER APPOINTMENTS IN DELHI &amp; MUMBAI</div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       02. SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      
+      <!-- Mobile Menu Toggle Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo">
+        <span class="brand-title">SŪTRA</span>
+        <span class="brand-subtitle">ATELIER &bull; NEW DELHI</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#collections" class="nav-link">Collections</a>
+        <a href="#bestsellers" class="nav-link active">Kurtis</a>
+        <a href="#categories" class="nav-link">Silhouettes</a>
+        <a href="#craft" class="nav-link">Craftsmanship</a>
+        <a href="#editorial" class="nav-link">Editorial</a>
+        <a href="#lookbook" class="nav-link">Lookbook</a>
+        <a href="#bestsellers" class="nav-link sale">The Edit</a>
+      </nav>
+
+      <!-- Action Utilities (Search, Wishlist, Bag) -->
+      <div class="nav-actions">
+        <button class="action-btn" id="searchBtn" aria-label="Open search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <button class="action-btn" id="wishlistNavBtn" aria-label="Wishlist items">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-count" id="wishlistCount">0</span>
+        </button>
+
+        <button class="action-btn" id="cartNavBtn" aria-label="Shopping bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="badge-count" id="cartCount">1</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       03. MOBILE NAVIGATION DRAWER
+       ========================================================================== -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div class="mobile-nav-links">
+      <a href="#bestsellers" class="mobile-nav-link" data-close-drawer>
+        <span>All Kurtis</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a href="#collections" class="mobile-nav-link" data-close-drawer>
+        <span>Collections</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a href="#categories" class="mobile-nav-link" data-close-drawer>
+        <span>Silhouettes</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a href="#editorial" class="mobile-nav-link" data-close-drawer>
+        <span>Editorial Autumn '26</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a href="#craft" class="mobile-nav-link" data-close-drawer>
+        <span>The Handloom Craft</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a href="#lookbook" class="mobile-nav-link" data-close-drawer>
+        <span>Lookbook</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <div class="mobile-drawer-contact">
+        <strong>Atelier Concierge</strong><br>
+        Mon–Sat, 10:00 AM – 7:00 PM IST<br>
+        WhatsApp: +91 (0) 98110 24000<br>
+        concierge@sutra-atelier.com
+      </div>
+      <div class="mobile-drawer-socials">
+        <span>Instagram</span>
+        <span>Pinterest</span>
+        <span>Journal</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       04. SEARCH MODAL OVERLAY
+       ========================================================================== -->
+  <div class="search-modal" id="searchModal">
+    <button class="search-close-btn" id="closeSearchBtn" aria-label="Close search">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <div class="search-box-inner">
+      <span class="eyebrow">Search The Sūtra Archive</span>
+      <input type="text" class="search-input-field" placeholder="Type silhouette, fabric, or keyword..." autofocus>
+      <div class="search-tags">
+        <span class="caption" style="display:block; width:100%; margin-bottom:4px;">Popular Searches:</span>
+        <button class="search-tag-chip">Chanderi Silk</button>
+        <button class="search-tag-chip">Asymmetric Angrakha</button>
+        <button class="search-tag-chip">Noir Kurtis</button>
+        <button class="search-tag-chip">Ivory Chikankari</button>
+        <button class="search-tag-chip">Co-ord Sets</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       05. HERO SECTION (EDITORIAL FASHION CAMPAIGN)
+       ========================================================================== -->
+  <section class="hero-section">
+    <div class="hero-grid">
+      
+      <!-- Fashion Photography Frame -->
+      <div class="hero-media-wrapper">
+        <img src="images/hero.jpg" alt="Indian woman modeling tailored monochrome designer kurti ensemble" class="hero-image" priority>
+        <span class="hero-badge">Atelier No. 04 &bull; Monochrome Edit</span>
+      </div>
+
+      <!-- Campaign Editorial Typography -->
+      <div class="hero-content">
+        <div class="hero-meta">
+          <span class="eyebrow">Autumn / Festive 2026</span>
+          <span style="color:var(--color-gray-400)">|</span>
+          <span class="hero-meta edition">Limited Series</span>
+        </div>
+
+        <h1 class="headline-hero hero-headline">
+          The Art of <span class="emphasis">Everyday Elegance</span>
+        </h1>
+
+        <p class="lead-text hero-lead">
+          Contemporary silhouettes sculpted from heritage handloom weaves. Designed for discerning women who wear Indian craftsmanship with architectural poise.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#bestsellers" class="btn btn-primary">Shop Collection</a>
+          <a href="#editorial" class="btn btn-outline">View Lookbook</a>
+        </div>
+
+        <!-- Luxury Specifications -->
+        <div class="hero-specs">
+          <div class="spec-item">
+            <span class="spec-number">100%</span>
+            <span class="spec-label">Pure Handspun Fibers</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-number">48h</span>
+            <span class="spec-label">Artisan Weave Time</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-number">0%</span>
+            <span class="spec-label">Plastic Packaging</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       06. FEATURED CURATED EDITS
+       ========================================================================== -->
+  <section class="section" id="collections">
+    <div class="container">
+      
+      <div class="section-header between">
+        <div>
+          <span class="eyebrow">New Season Curation</span>
+          <h2 class="headline-section">Curated Silhouettes</h2>
+        </div>
+        <p class="lead-text" style="max-width: 420px;">
+          Four distinct capsules celebrating the subtle geometry and tactile mastery of Indian textiles.
+        </p>
+      </div>
+
+      <div class="collections-grid">
+        
+        <!-- Collection 1 -->
+        <a href="#bestsellers" class="collection-card">
+          <div class="collection-media">
+            <img src="images/chanderi_white.jpg" alt="Model wearing Chanderi silk kurti">
+            <span class="collection-tag">Capsule 01</span>
+          </div>
+          <div class="collection-info">
+            <h3 class="collection-title">
+              The Chanderi Edit
+              <span class="collection-arrow">&rarr;</span>
+            </h3>
+            <p class="collection-desc">Translucent weaves with fine antique zari borders.</p>
+          </div>
+        </a>
+
+        <!-- Collection 2 -->
+        <a href="#bestsellers" class="collection-card">
+          <div class="collection-media">
+            <img src="images/angrakha.jpg" alt="Model in festive black angrakha kurti">
+            <span class="collection-tag">Capsule 02</span>
+          </div>
+          <div class="collection-info">
+            <h3 class="collection-title">
+              Festive Noir
+              <span class="collection-arrow">&rarr;</span>
+            </h3>
+            <p class="collection-desc">Sculptural silhouettes in structured raw silk.</p>
+          </div>
+        </a>
+
+        <!-- Collection 3 -->
+        <a href="#bestsellers" class="collection-card">
+          <div class="collection-media">
+            <img src="images/chikankari.jpg" alt="Handcrafted chikankari kurti on model">
+            <span class="collection-tag">Capsule 03</span>
+          </div>
+          <div class="collection-info">
+            <h3 class="collection-title">
+              Ivory Chikankari
+              <span class="collection-arrow">&rarr;</span>
+            </h3>
+            <p class="collection-desc">Needle-point shadow work on featherlight mulmul.</p>
+          </div>
+        </a>
+
+        <!-- Collection 4 -->
+        <a href="#bestsellers" class="collection-card">
+          <div class="collection-media">
+            <img src="images/coord_set.jpg" alt="Model wearing modern ethnic co-ord set">
+            <span class="collection-tag">Capsule 04</span>
+          </div>
+          <div class="collection-info">
+            <h3 class="collection-title">
+              Artisanal Co-ords
+              <span class="collection-arrow">&rarr;</span>
+            </h3>
+            <p class="collection-desc">Effortless tunics with tailored cigarette trousers.</p>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       07. SHOP BY CATEGORY / SILHOUETTE
+       ========================================================================== -->
+  <section class="section" id="categories" style="background-color: var(--color-white); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+    <div class="container">
+      
+      <div class="section-header text-center">
+        <span class="eyebrow">Shop By Silhouette</span>
+        <h2 class="headline-section">Architectural Forms</h2>
+        <p class="lead-text" style="max-width: 520px;">
+          Every silhouette is drafted to complement natural posture and movement without restricting form.
+        </p>
+      </div>
+
+      <div class="categories-grid">
+        
+        <!-- Tile 1 -->
+        <a href="#bestsellers" class="category-tile">
+          <div class="category-media">
+            <img src="images/straight_kurti.jpg" alt="Straight Cut Kurtis">
+          </div>
+          <div class="category-caption">
+            <h4 class="category-name">Straight Kurtis</h4>
+            <span class="category-count">14 Designs</span>
+          </div>
+        </a>
+
+        <!-- Tile 2 -->
+        <a href="#bestsellers" class="category-tile">
+          <div class="category-media">
+            <img src="images/anarkali.jpg" alt="Flared Anarkalis">
+          </div>
+          <div class="category-caption">
+            <h4 class="category-name">Flared Anarkalis</h4>
+            <span class="category-count">10 Designs</span>
+          </div>
+        </a>
+
+        <!-- Tile 3 -->
+        <a href="#bestsellers" class="category-tile">
+          <div class="category-media">
+            <img src="images/angrakha.jpg" alt="Asymmetric Angrakhas">
+          </div>
+          <div class="category-caption">
+            <h4 class="category-name">Angrakhas</h4>
+            <span class="category-count">08 Designs</span>
+          </div>
+        </a>
+
+        <!-- Tile 4 -->
+        <a href="#bestsellers" class="category-tile">
+          <div class="category-media">
+            <img src="images/coord_set.jpg" alt="Modern Ethnic Co-ord Sets">
+          </div>
+          <div class="category-caption">
+            <h4 class="category-name">Co-ord Sets</h4>
+            <span class="category-count">12 Designs</span>
+          </div>
+        </a>
+
+        <!-- Tile 5 -->
+        <a href="#bestsellers" class="category-tile">
+          <div class="category-media">
+            <img src="images/chanderi_white.jpg" alt="Handwoven Silks">
+          </div>
+          <div class="category-caption">
+            <h4 class="category-name">Chanderi Silks</h4>
+            <span class="category-count">16 Designs</span>
+          </div>
+        </a>
+
+        <!-- Tile 6 -->
+        <a href="#bestsellers" class="category-tile">
+          <div class="category-media">
+            <img src="images/chikankari.jpg" alt="Heirloom Chikankari">
+          </div>
+          <div class="category-caption">
+            <h4 class="category-name">Chikankari</h4>
+            <span class="category-count">09 Designs</span>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       08. BEST SELLERS PRODUCT SHOWCASE (INTERACTIVE GRID)
+       ========================================================================== -->
+  <section class="section" id="bestsellers">
+    <div class="container">
+      
+      <div class="section-header text-center">
+        <span class="eyebrow">Signature Offerings</span>
+        <h2 class="headline-section">The Permanent Collection</h2>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="filter-bar" role="tablist">
+        <button class="filter-btn active" data-filter="all">All Silhouettes</button>
+        <button class="filter-btn" data-filter="chanderi">Chanderi Silks</button>
+        <button class="filter-btn" data-filter="noir">Festive Noir</button>
+        <button class="filter-btn" data-filter="chikankari">Chikankari</button>
+        <button class="filter-btn" data-filter="coords">Co-ord Sets</button>
+      </div>
+
+      <!-- 2-Column Mobile, 4-Column Desktop Product Grid -->
+      <div class="product-grid" id="productGrid">
+        
+        <!-- Product 1 -->
+        <article class="product-card" data-category="noir">
+          <div class="product-media-container">
+            <span class="product-badge">Bestseller</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="images/angrakha.jpg" alt="The Nila Asymmetric Angrakha" class="product-img-primary">
+            <img src="images/embroidery_noir.jpg" alt="The Nila detail embroidery" class="product-img-secondary">
+            <div class="product-quick-actions">
+              <div class="quick-size-select">
+                <span class="size-pill" data-add-size="XS">XS</span>
+                <span class="size-pill" data-add-size="S">S</span>
+                <span class="size-pill" data-add-size="M">M</span>
+                <span class="size-pill" data-add-size="L">L</span>
+                <span class="size-pill" data-add-size="XL">XL</span>
+              </div>
+              <button class="btn-quick-view" data-product-id="1">Quick View</button>
+            </div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">The Nila Asymmetric Angrakha</h3>
+            <p class="product-fabric">Handspun raw silk with tassel tie-up</p>
+            <div class="product-price-row">
+              <span class="product-price">₹24,500</span>
+              <span class="product-old-price">₹28,000</span>
+            </div>
+            <button class="mobile-add-btn" data-product-id="1">
+              <span>Quick Add</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card" data-category="coords">
+          <div class="product-media-container">
+            <span class="product-badge light">New Arrival</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="images/hero.jpg" alt="The Kashvi Modern Tunic Set" class="product-img-primary">
+            <img src="images/coord_set.jpg" alt="The Kashvi Tunic alternate view" class="product-img-secondary">
+            <div class="product-quick-actions">
+              <div class="quick-size-select">
+                <span class="size-pill" data-add-size="XS">XS</span>
+                <span class="size-pill" data-add-size="S">S</span>
+                <span class="size-pill" data-add-size="M">M</span>
+                <span class="size-pill" data-add-size="L">L</span>
+                <span class="size-pill" data-add-size="XL">XL</span>
+              </div>
+              <button class="btn-quick-view" data-product-id="2">Quick View</button>
+            </div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">The Kashvi Modern Tunic Set</h3>
+            <p class="product-fabric">Architectural belted tunic &amp; pant</p>
+            <div class="product-price-row">
+              <span class="product-price">₹18,500</span>
+            </div>
+            <button class="mobile-add-btn" data-product-id="2">
+              <span>Quick Add</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card" data-category="chikankari">
+          <div class="product-media-container">
+            <span class="product-badge">Handcrafted</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="3">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="images/chikankari.jpg" alt="The Mehr Ivory Chikankari Kurti" class="product-img-primary">
+            <img src="images/embroidery_ivory.jpg" alt="The Mehr needle detail" class="product-img-secondary">
+            <div class="product-quick-actions">
+              <div class="quick-size-select">
+                <span class="size-pill" data-add-size="XS">XS</span>
+                <span class="size-pill" data-add-size="S">S</span>
+                <span class="size-pill" data-add-size="M">M</span>
+                <span class="size-pill" data-add-size="L">L</span>
+                <span class="size-pill" data-add-size="XL">XL</span>
+              </div>
+              <button class="btn-quick-view" data-product-id="3">Quick View</button>
+            </div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">The Mehr Ivory Chikankari Kurti</h3>
+            <p class="product-fabric">Lucknowi shadow needlework on mulmul</p>
+            <div class="product-price-row">
+              <span class="product-price">₹21,000</span>
+              <span class="product-old-price">₹24,000</span>
+            </div>
+            <button class="mobile-add-btn" data-product-id="3">
+              <span>Quick Add</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card" data-category="noir">
+          <div class="product-media-container">
+            <span class="product-badge light">Atelier Classic</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="4">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="images/straight_kurti.jpg" alt="The Zoya Noir Straight Kurta" class="product-img-primary">
+            <img src="images/embroidery_noir.jpg" alt="The Zoya fabric detail" class="product-img-secondary">
+            <div class="product-quick-actions">
+              <div class="quick-size-select">
+                <span class="size-pill" data-add-size="XS">XS</span>
+                <span class="size-pill" data-add-size="S">S</span>
+                <span class="size-pill" data-add-size="M">M</span>
+                <span class="size-pill" data-add-size="L">L</span>
+                <span class="size-pill" data-add-size="XL">XL</span>
+              </div>
+              <button class="btn-quick-view" data-product-id="4">Quick View</button>
+            </div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">The Zoya Noir Straight Kurta</h3>
+            <p class="product-fabric">Pure handloom tussar with side slits</p>
+            <div class="product-price-row">
+              <span class="product-price">₹16,500</span>
+            </div>
+            <button class="mobile-add-btn" data-product-id="4">
+              <span>Quick Add</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product-card" data-category="noir">
+          <div class="product-media-container">
+            <span class="product-badge">Bestseller</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="images/anarkali.jpg" alt="The Tara Flared Anarkali Kurta" class="product-img-primary">
+            <img src="images/embroidery_noir.jpg" alt="The Tara cuff detail" class="product-img-secondary">
+            <div class="product-quick-actions">
+              <div class="quick-size-select">
+                <span class="size-pill" data-add-size="XS">XS</span>
+                <span class="size-pill" data-add-size="S">S</span>
+                <span class="size-pill" data-add-size="M">M</span>
+                <span class="size-pill" data-add-size="L">L</span>
+                <span class="size-pill" data-add-size="XL">XL</span>
+              </div>
+              <button class="btn-quick-view" data-product-id="5">Quick View</button>
+            </div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">The Tara Flared Anarkali Kurta</h3>
+            <p class="product-fabric">Voluminous drape with hand-embroidered cuffs</p>
+            <div class="product-price-row">
+              <span class="product-price">₹28,500</span>
+              <span class="product-old-price">₹32,000</span>
+            </div>
+            <button class="mobile-add-btn" data-product-id="5">
+              <span>Quick Add</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product-card" data-category="chanderi">
+          <div class="product-media-container">
+            <span class="product-badge light">Pure Silk</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="6">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="images/chanderi_white.jpg" alt="The Sitara Pure Chanderi Kurta" class="product-img-primary">
+            <img src="images/embroidery_ivory.jpg" alt="The Sitara zari detail" class="product-img-secondary">
+            <div class="product-quick-actions">
+              <div class="quick-size-select">
+                <span class="size-pill" data-add-size="XS">XS</span>
+                <span class="size-pill" data-add-size="S">S</span>
+                <span class="size-pill" data-add-size="M">M</span>
+                <span class="size-pill" data-add-size="L">L</span>
+                <span class="size-pill" data-add-size="XL">XL</span>
+              </div>
+              <button class="btn-quick-view" data-product-id="6">Quick View</button>
+            </div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">The Sitara Pure Chanderi Kurta</h3>
+            <p class="product-fabric">Handwoven ivory silk with subtle border piping</p>
+            <div class="product-price-row">
+              <span class="product-price">₹19,800</span>
+            </div>
+            <button class="mobile-add-btn" data-product-id="6">
+              <span>Quick Add</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Product 7 -->
+        <article class="product-card" data-category="coords">
+          <div class="product-media-container">
+            <span class="product-badge">Exclusive</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="7">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="images/coord_set.jpg" alt="The Avani Hand-Woven Co-ord" class="product-img-primary">
+            <img src="images/embroidery_ivory.jpg" alt="The Avani geometric needlework" class="product-img-secondary">
+            <div class="product-quick-actions">
+              <div class="quick-size-select">
+                <span class="size-pill" data-add-size="XS">XS</span>
+                <span class="size-pill" data-add-size="S">S</span>
+                <span class="size-pill" data-add-size="M">M</span>
+                <span class="size-pill" data-add-size="L">L</span>
+                <span class="size-pill" data-add-size="XL">XL</span>
+              </div>
+              <button class="btn-quick-view" data-product-id="7">Quick View</button>
+            </div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">The Avani Hand-Woven Co-ord</h3>
+            <p class="product-fabric">Relaxed tunic top with pintuck palazzo</p>
+            <div class="product-price-row">
+              <span class="product-price">₹17,200</span>
+            </div>
+            <button class="mobile-add-btn" data-product-id="7">
+              <span>Quick Add</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Product 8 -->
+        <article class="product-card" data-category="chanderi">
+          <div class="product-media-container">
+            <span class="product-badge light">Limited</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="8">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="images/lookbook_portrait.jpg" alt="The Meera Heritage Drape &amp; Kurti" class="product-img-primary">
+            <img src="images/craft_loom.jpg" alt="The Meera loom process" class="product-img-secondary">
+            <div class="product-quick-actions">
+              <div class="quick-size-select">
+                <span class="size-pill" data-add-size="XS">XS</span>
+                <span class="size-pill" data-add-size="S">S</span>
+                <span class="size-pill" data-add-size="M">M</span>
+                <span class="size-pill" data-add-size="L">L</span>
+                <span class="size-pill" data-add-size="XL">XL</span>
+              </div>
+              <button class="btn-quick-view" data-product-id="8">Quick View</button>
+            </div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">The Meera Heritage Drape &amp; Kurti</h3>
+            <p class="product-fabric">Chanderi silk ensemble with gossamer dupatta</p>
+            <div class="product-price-row">
+              <span class="product-price">₹26,000</span>
+            </div>
+            <button class="mobile-add-btn" data-product-id="8">
+              <span>Quick Add</span>
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       09. EDITORIAL PANORAMIC BREAK BANNER
+       ========================================================================== -->
+  <section class="editorial-banner-section" id="editorial">
+    <div class="editorial-panorama">
+      
+      <div class="editorial-bg-media">
+        <img src="images/editorial_wide.jpg" alt="Indian fashion model in architectural gallery">
+      </div>
+      <div class="editorial-overlay"></div>
+
+      <div class="container">
+        <div class="editorial-content">
+          <span class="eyebrow">Atelier Philosophy</span>
+          <h2 class="editorial-title">Timeless Form. Living Heritage.</h2>
+          <p class="editorial-quote">
+            &ldquo;We reject the disposable velocity of fast fashion in favor of heirloom Indian silhouettes designed to be treasured across generations.&rdquo;
+          </p>
+          <a href="#craft" class="btn btn-outline-white">Discover The Craft</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. MINIMAL PROMOTIONAL PHILOSOPHY
+       ========================================================================== -->
+  <section class="section promo-section">
+    <div class="container">
+      <div class="promo-container">
+        <span class="eyebrow">The Wardrobe Standard</span>
+        <h2 class="promo-title">Your Everyday, Elevated.</h2>
+        <p class="promo-desc">
+          Discover timeless Indian silhouettes sculpted for contemporary life. Unhurried tailoring, natural organic fibers, and quiet sophistication designed for the modern connoisseur.
+        </p>
+        <a href="#bestsellers" class="btn btn-primary">Explore Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       11. CRAFTSMANSHIP & ATELIER VALUES
+       ========================================================================== -->
+  <section class="section craft-section" id="craft">
+    <div class="container">
+      
+      <div class="section-header between">
+        <div>
+          <span class="eyebrow">The Atelier Standards</span>
+          <h2 class="headline-section">Rooted in Craftsmanship</h2>
+        </div>
+        <p class="lead-text" style="max-width: 440px;">
+          Every garment is crafted slowly in limited batches, honoring master artisans and sustainable heritage traditions.
+        </p>
+      </div>
+
+      <div class="craft-grid">
+        
+        <div class="craft-item">
+          <span class="craft-number">01</span>
+          <h3 class="craft-title">Pure Heritage Fibers</h3>
+          <p class="craft-desc">
+            Exclusively handspun mulberry silks, certified organic cotton mulmul, and hand-loomed Maheshwari weaves that breathe naturally with the body.
+          </p>
+        </div>
+
+        <div class="craft-item">
+          <span class="craft-number">02</span>
+          <h3 class="craft-title">Master Artisan Tailoring</h3>
+          <p class="craft-desc">
+            Handcrafted across multi-generational karigar clusters in Lucknow, Chanderi, and Bengal. Fair living wages and revered artisanal lineage.
+          </p>
+        </div>
+
+        <div class="craft-item">
+          <span class="craft-number">03</span>
+          <h3 class="craft-title">Made-to-Measure Fits</h3>
+          <p class="craft-desc">
+            We celebrate individual posture and proportions. Complimentary custom tailoring and length adjustments available for every patron.
+          </p>
+        </div>
+
+        <div class="craft-item">
+          <span class="craft-number">04</span>
+          <h3 class="craft-title">Conscious Luxury</h3>
+          <p class="craft-desc">
+            100% plastic-free, recyclable presentation boxes with hand-stitched cotton garment pouches and carbon-neutral express dispatch.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       12. REVIEWS & PRESS MENTIONS
+       ========================================================================== -->
+  <section class="section reviews-section">
+    <div class="container">
+      
+      <!-- Editorial Press Bar -->
+      <div class="press-bar">
+        <span class="press-logo">VOGUE INDIA</span>
+        <span class="press-logo">ELLE</span>
+        <span class="press-logo">HARPER'S BAZAAR</span>
+        <span class="press-logo">ARCHITECTURAL DIGEST</span>
+      </div>
+
+      <div class="section-header text-center">
+        <span class="eyebrow">Patron Reflections</span>
+        <h2 class="headline-section">In The Words of Connoisseurs</h2>
+      </div>
+
+      <div class="reviews-grid">
+        
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <p class="review-quote">
+              &ldquo;The Nila Angrakha has the kind of sculptural restraint you only find in top couturiers. The fabric breathes like a second skin yet commands effortless presence in boardrooms and galleries alike.&rdquo;
+            </p>
+          </div>
+          <div class="review-author">
+            <span class="author-name">Ayesha Kapoor</span>
+            <span class="author-location">Art Historian &amp; Curator &bull; New Delhi</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <p class="review-quote">
+              &ldquo;Finally, an Indian label that understands monochrome subtlety without losing ethnic warmth. The Chikankari shadow work is breathtakingly fine. It feels like an heirloom.&rdquo;
+            </p>
+          </div>
+          <div class="review-author">
+            <span class="author-name">Dr. Radhika Sen</span>
+            <span class="author-location">Architect &bull; Bengaluru</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <p class="review-quote">
+              &ldquo;Living in London, finding genuine bespoke Indian silhouettes was nearly impossible until Sūtra. The packaging arrived immaculate, and the fit was perfection without any alterations.&rdquo;
+            </p>
+          </div>
+          <div class="review-author">
+            <span class="author-name">Simran Dhillon</span>
+            <span class="author-location">Creative Director &bull; London</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       13. EDITORIAL LOOKBOOK GALLERY
+       ========================================================================== -->
+  <section class="section lookbook-section" id="lookbook">
+    <div class="container">
+      
+      <div class="section-header between">
+        <div>
+          <span class="eyebrow">Visual Archive</span>
+          <h2 class="headline-section">The Sūtra Journal</h2>
+        </div>
+        <a href="#bestsellers" class="btn-link">View Full Campaign (24)</a>
+      </div>
+
+      <div class="lookbook-grid">
+        
+        <div class="lookbook-item">
+          <img src="images/lookbook_portrait.jpg" alt="Sūtra Look 01 - Heritage Silk Drape">
+          <div class="lookbook-overlay">Look 01</div>
+        </div>
+
+        <div class="lookbook-item">
+          <img src="images/craft_loom.jpg" alt="Sūtra Look 02 - Handloom Process">
+          <div class="lookbook-overlay">The Loom</div>
+        </div>
+
+        <div class="lookbook-item">
+          <img src="images/anarkali.jpg" alt="Sūtra Look 03 - Fluid Silhouette">
+          <div class="lookbook-overlay">Look 03</div>
+        </div>
+
+        <div class="lookbook-item">
+          <img src="images/chanderi_white.jpg" alt="Sūtra Look 04 - Chanderi Ivory">
+          <div class="lookbook-overlay">Look 04</div>
+        </div>
+
+        <div class="lookbook-item">
+          <img src="images/coord_set.jpg" alt="Sūtra Look 05 - Modern Co-ord">
+          <div class="lookbook-overlay">Look 05</div>
+        </div>
+
+        <div class="lookbook-item">
+          <img src="images/embroidery_noir.jpg" alt="Sūtra Look 06 - Tone on Tone Zari">
+          <div class="lookbook-overlay">Detail 06</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       14. NEWSLETTER EDITORIAL SECTION
+       ========================================================================== -->
+  <section class="section newsletter-section">
+    <div class="container">
+      <div class="newsletter-box">
+        <span class="eyebrow">Private Client Access</span>
+        <h2 class="newsletter-title">Stay In The Edit</h2>
+        <p class="newsletter-desc">
+          Receive private atelier invitations, preview limited edition handloom drops, and read curations on modern Indian textile arts.
+        </p>
+
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" class="newsletter-input" placeholder="Enter your email address..." required aria-label="Email address">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+
+        <p class="newsletter-disclaimer">
+          By subscribing, you consent to our privacy policy. Dispatches are sent fortnightly with uncompromised discretion.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       15. SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Brand Summary -->
+        <div class="footer-brand">
+          <span class="footer-brand-title">SŪTRA</span>
+          <p class="footer-brand-desc">
+            A contemporary Indian ethnic design studio honoring heritage weaving clusters through architectural silhouettes, monochrome clarity, and unhurried luxury.
+          </p>
+          <div class="caption" style="color:var(--color-gray-400); margin-top:8px;">
+            The Sūtra Atelier, Mehrauli Heritage Precinct, New Delhi 110030
+          </div>
+        </div>
+
+        <!-- Column 1: Collections -->
+        <div>
+          <h4 class="footer-col-title">Collections</h4>
+          <div class="footer-links">
+            <a href="#bestsellers" class="footer-link">Autumn/Festive 2026</a>
+            <a href="#bestsellers" class="footer-link">Pure Chanderi Edit</a>
+            <a href="#bestsellers" class="footer-link">Heirloom Chikankari</a>
+            <a href="#bestsellers" class="footer-link">Artisanal Co-ords</a>
+            <a href="#bestsellers" class="footer-link">Monochrome Noir</a>
+            <a href="#bestsellers" class="footer-link">Archive &amp; Classics</a>
+          </div>
+        </div>
+
+        <!-- Column 2: Atelier Concierge -->
+        <div>
+          <h4 class="footer-col-title">Customer Care</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link" id="footerBookApt">Book Atelier Fitting</a>
+            <a href="#" class="footer-link">Made-to-Measure Guide</a>
+            <a href="#" class="footer-link">Complimentary Shipping</a>
+            <a href="#" class="footer-link">Exchanges &amp; Returns</a>
+            <a href="#" class="footer-link">Textile Care Rituals</a>
+            <a href="#" class="footer-link">WhatsApp Concierge</a>
+          </div>
+        </div>
+
+        <!-- Column 3: Sustainability & Journal -->
+        <div>
+          <h4 class="footer-col-title">The Maison</h4>
+          <div class="footer-links">
+            <a href="#craft" class="footer-link">Weaving Clusters</a>
+            <a href="#craft" class="footer-link">Artisan Karigars</a>
+            <a href="#" class="footer-link">Zero-Waste Commitment</a>
+            <a href="#lookbook" class="footer-link">The Lookbook</a>
+            <a href="#" class="footer-link">Press &amp; Features</a>
+            <a href="#" class="footer-link">Careers at Sūtra</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 SŪTRA ATELIER PVT. LTD. ALL RIGHTS RESERVED.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Security &amp; Authenticity</a>
+          <a href="#">Currency: INR (₹)</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       16. SLIDE-OVER CART DRAWER
+       ========================================================================== -->
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Bag">
+    <div class="cart-header">
+      <h3 class="cart-title">Shopping Bag (<span id="cartDrawerCount">1</span>)</h3>
+      <button class="action-btn" id="closeCartBtn" aria-label="Close cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Free Shipping Progress -->
+    <div class="cart-shipping-banner">
+      <div id="shippingStatusText">Complimentary express shipping unlocked!</div>
+      <div class="shipping-progress-bar">
+        <div class="shipping-progress-fill" id="shippingProgress"></div>
+      </div>
+    </div>
+
+    <!-- Bag Items -->
+    <div class="cart-body" id="cartItemsContainer">
+      <!-- Dynamic or Initial Item -->
+      <div class="cart-item" data-cart-id="item-1">
+        <img src="images/angrakha.jpg" alt="The Nila Asymmetric Angrakha" class="cart-item-img">
+        <div class="cart-item-details">
+          <div>
+            <h4 class="cart-item-title">The Nila Asymmetric Angrakha</h4>
+            <div class="cart-item-meta">Size: M | Color: Noir Handspun</div>
+          </div>
+          <div class="cart-item-bottom">
+            <div class="cart-qty-control">
+              <button class="qty-btn" data-action="decrement">-</button>
+              <span class="qty-val">1</span>
+              <button class="qty-btn" data-action="increment">+</button>
+            </div>
+            <span class="cart-item-price">₹24,500</span>
+          </div>
+          <button class="cart-item-remove" data-action="remove">Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Footer & Checkout -->
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span>Estimated Subtotal</span>
+        <span class="cart-subtotal-price" id="cartSubtotal">₹24,500</span>
+      </div>
+      <div class="cart-taxes-note">Taxes, duties &amp; complimentary wooden hanger included</div>
+      <button class="btn btn-primary" id="checkoutBtn" style="width: 100%; margin-top: 8px;">
+        Proceed To Checkout
+      </button>
+      <button class="btn btn-link" id="continueShoppingBtn" style="align-self: center; margin-top: 4px;">
+        Continue Shopping
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       17. QUICK VIEW MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="quickViewModal">
+    <div class="quickview-card">
+      <button class="modal-close-btn" id="closeQuickViewBtn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="quickview-media">
+        <img src="images/angrakha.jpg" id="qvImage" alt="Quick view product">
+      </div>
+
+      <div class="quickview-info">
+        <span class="eyebrow" id="qvBadge">Atelier Signature</span>
+        <h3 class="headline-card quickview-title" id="qvTitle">The Nila Asymmetric Angrakha</h3>
+        <div class="quickview-price" id="qvPrice">₹24,500</div>
+        
+        <p class="quickview-desc" id="qvDesc">
+          Sculpted in handspun raw silk featuring an asymmetric overlap bodice with hand-knotted braided cord tassels. Designed with deep side pockets and structured side slits.
+        </p>
+
+        <div class="size-selector-wrap">
+          <div class="size-selector-label">
+            <span>Select Size (Bespoke Cut)</span>
+            <a href="#craft">Size Guide</a>
+          </div>
+          <div class="size-options">
+            <button class="size-opt">XS</button>
+            <button class="size-opt active">S</button>
+            <button class="size-opt">M</button>
+            <button class="size-opt">L</button>
+            <button class="size-opt">XL</button>
+          </div>
+        </div>
+
+        <div style="margin-top: 16px; display: flex; flex-direction: column; gap: 8px;">
+          <button class="btn btn-primary" id="qvAddToBagBtn" style="width: 100%;">
+            Add To Bag &bull; <span id="qvBtnPrice">₹24,500</span>
+          </button>
+          <span class="caption" style="text-align: center;">Ships in complimentary silk presentation box within 24 hours</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       18. INTERACTIVE TOAST NOTIFICATION
+       ========================================================================== -->
+  <div class="toast-notice" id="toastNotice">
+    <span class="toast-dot"></span>
+    <span id="toastMessage">Added to shopping bag</span>
+  </div>
+
+  <!-- ==========================================================================
+       19. LIGHTWEIGHT VANILLA CONTROLLER SCRIPT
+       ========================================================================== -->
+  <script>
+    // Product Catalog Data for Quick View & Cart
+    const catalog = {
+      "1": {
+        title: "The Nila Asymmetric Angrakha",
+        price: 24500,
+        fabric: "Pure handspun raw silk with tassel tie-up",
+        desc: "Sculpted in handspun raw silk featuring an asymmetric overlap bodice with hand-knotted braided cord tassels. Handcrafted across 42 hours.",
+        img: "images/angrakha.jpg",
+        badge: "Bestseller"
+      },
+      "2": {
+        title: "The Kashvi Modern Tunic Set",
+        price: 18500,
+        fabric: "Architectural belted tunic & cigarette pant",
+        desc: "Precision tailored in mid-weight organic chanderi cotton. Features a clean architectural belt detail and concealed inseam pockets.",
+        img: "images/hero.jpg",
+        badge: "New Arrival"
+      },
+      "3": {
+        title: "The Mehr Ivory Chikankari Kurti",
+        price: 21000,
+        fabric: "Lucknowi shadow needlework on mulmul",
+        desc: "Crafted by master artisans in Lucknow using 32 stitches of authentic Chikankari and Mukaish metallic dotting on sheer breathable mulmul.",
+        img: "images/chikankari.jpg",
+        badge: "Handcrafted"
+      },
+      "4": {
+        title: "The Zoya Noir Straight Kurta",
+        price: 16500,
+        fabric: "Pure handloom tussar with side slits",
+        desc: "Clean, unembellished lines letting the rich texture of natural slubbed tussar silk speak. Paired effortlessly with slim trousers or palazzos.",
+        img: "images/straight_kurti.jpg",
+        badge: "Atelier Classic"
+      },
+      "5": {
+        title: "The Tara Flared Anarkali Kurta",
+        price: 28500,
+        fabric: "Voluminous drape with hand-embroidered cuffs",
+        desc: "Sculptural flared silhouette offering 4.5 meters of handloom sweep. Finished with metallic tone-on-tone zari cuffs.",
+        img: "images/anarkali.jpg",
+        badge: "Bestseller"
+      },
+      "6": {
+        title: "The Sitara Pure Chanderi Kurta",
+        price: 19800,
+        fabric: "Handwoven ivory silk with subtle border piping",
+        desc: "Woven in the historic cluster of Chanderi with translucent zari borders and delicate pintucks at the yoke.",
+        img: "images/chanderi_white.jpg",
+        badge: "Pure Silk"
+      },
+      "7": {
+        title: "The Avani Hand-Woven Co-ord",
+        price: 17200,
+        fabric: "Relaxed tunic top with pintuck palazzo",
+        desc: "Refined geometric yoke detailing paired with relaxed-fit culotte pants. Ideal for understated day-to-evening transitions.",
+        img: "images/coord_set.jpg",
+        badge: "Exclusive"
+      },
+      "8": {
+        title: "The Meera Heritage Drape & Kurti",
+        price: 26000,
+        fabric: "Chanderi silk ensemble with gossamer dupatta",
+        desc: "A statement heirloom piece featuring a bespoke woven tissue dupatta bordered with traditional Indian banarsi motifs.",
+        img: "images/lookbook_portrait.jpg",
+        badge: "Limited"
+      }
+    };
+
+    // State
+    let cart = [
+      { id: "1", title: "The Nila Asymmetric Angrakha", price: 24500, size: "M", qty: 1, img: "images/angrakha.jpg" }
+    ];
+    let wishlist = new Set();
+    let currentQvId = "1";
+
+    // DOM Elements
+    const siteHeader = document.getElementById('siteHeader');
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const searchBtn = document.getElementById('searchBtn');
+    const searchModal = document.getElementById('searchModal');
+    const closeSearchBtn = document.getElementById('closeSearchBtn');
+    const cartNavBtn = document.getElementById('cartNavBtn');
+    const cartDrawer = document.getElementById('cartDrawer');
+    const cartBackdrop = document.getElementById('cartBackdrop');
+    const closeCartBtn = document.getElementById('closeCartBtn');
+    const continueShoppingBtn = document.getElementById('continueShoppingBtn');
+    const cartCount = document.getElementById('cartCount');
+    const cartDrawerCount = document.getElementById('cartDrawerCount');
+    const cartSubtotal = document.getElementById('cartSubtotal');
+    const cartItemsContainer = document.getElementById('cartItemsContainer');
+    const wishlistCount = document.getElementById('wishlistCount');
+    const toastNotice = document.getElementById('toastNotice');
+    const toastMessage = document.getElementById('toastMessage');
+    const quickViewModal = document.getElementById('quickViewModal');
+    const closeQuickViewBtn = document.getElementById('closeQuickViewBtn');
+
+    // Show Toast Helper
+    function showToast(msg) {
+      toastMessage.textContent = msg;
+      toastNotice.classList.add('show');
+      setTimeout(() => {
+        toastNotice.classList.remove('show');
+      }, 3000);
+    }
+
+    // Header Scroll Shadow
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 30) {
+        siteHeader.style.boxShadow = '0 4px 20px rgba(0,0,0,0.04)';
+      } else {
+        siteHeader.style.boxShadow = 'none';
+      }
+    });
+
+    // Mobile Menu Toggle
+    menuToggle.addEventListener('click', () => {
+      const isOpen = mobileDrawer.classList.toggle('active');
+      menuToggle.classList.toggle('active');
+      document.body.classList.toggle('no-scroll', isOpen);
+    });
+
+    document.querySelectorAll('[data-close-drawer]').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileDrawer.classList.remove('active');
+        menuToggle.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+      });
+    });
+
+    // Search Modal
+    searchBtn.addEventListener('click', () => {
+      searchModal.classList.add('active');
+      document.body.classList.add('no-scroll');
+    });
+
+    closeSearchBtn.addEventListener('click', () => {
+      searchModal.classList.remove('active');
+      document.body.classList.remove('no-scroll');
+    });
+
+    document.querySelectorAll('.search-tag-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        searchModal.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+        const query = chip.textContent.trim().toLowerCase();
+        showToast(`Searching for "${chip.textContent}"`);
+        const target = document.getElementById('bestsellers');
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Cart Drawer Toggle
+    function openCart() {
+      cartDrawer.classList.add('active');
+      cartBackdrop.classList.add('active');
+      document.body.classList.add('no-scroll');
+      renderCart();
+    }
+
+    function closeCart() {
+      cartDrawer.classList.remove('active');
+      cartBackdrop.classList.remove('active');
+      document.body.classList.remove('no-scroll');
+    }
+
+    cartNavBtn.addEventListener('click', openCart);
+    closeCartBtn.addEventListener('click', closeCart);
+    cartBackdrop.addEventListener('click', closeCart);
+    continueShoppingBtn.addEventListener('click', closeCart);
+
+    // Render Cart
+    function renderCart() {
+      const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+      cartCount.textContent = totalItems;
+      cartDrawerCount.textContent = totalItems;
+
+      if (cart.length === 0) {
+        cartItemsContainer.innerHTML = `
+          <div style="text-align:center; padding: 48px 16px; color: var(--color-gray-500);">
+            <p style="font-family:var(--font-serif); font-size: 1.3rem; margin-bottom: 8px;">Your bag is empty</p>
+            <p style="font-size: 0.8rem;">Explore our curated collection to add timeless Indian ethnic pieces.</p>
+          </div>
+        `;
+        cartSubtotal.textContent = '₹0';
+        return;
+      }
+
+      let subtotal = 0;
+      cartItemsContainer.innerHTML = cart.map((item, index) => {
+        const itemTotal = item.price * item.qty;
+        subtotal += itemTotal;
+        return `
+          <div class="cart-item" data-index="${index}">
+            <img src="${item.img}" alt="${item.title}" class="cart-item-img">
+            <div class="cart-item-details">
+              <div>
+                <h4 class="cart-item-title">${item.title}</h4>
+                <div class="cart-item-meta">Size: ${item.size}</div>
+              </div>
+              <div class="cart-item-bottom">
+                <div class="cart-qty-control">
+                  <button class="qty-btn" onclick="updateCartQty(${index}, -1)">-</button>
+                  <span class="qty-val">${item.qty}</span>
+                  <button class="qty-btn" onclick="updateCartQty(${index}, 1)">+</button>
+                </div>
+                <span class="cart-item-price">₹${itemTotal.toLocaleString('en-IN')}</span>
+              </div>
+              <button class="cart-item-remove" onclick="removeCartItem(${index})">Remove</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      cartSubtotal.textContent = `₹${subtotal.toLocaleString('en-IN')}`;
+    }
+
+    window.updateCartQty = function(index, change) {
+      cart[index].qty += change;
+      if (cart[index].qty <= 0) {
+        cart.splice(index, 1);
+      }
+      renderCart();
+    };
+
+    window.removeCartItem = function(index) {
+      cart.splice(index, 1);
+      renderCart();
+      showToast('Item removed from shopping bag');
+    };
+
+    // Wishlist Toggle
+    document.querySelectorAll('.wishlist-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const id = btn.getAttribute('data-id');
+        if (wishlist.has(id)) {
+          wishlist.delete(id);
+          btn.classList.remove('active');
+          showToast('Removed from wishlist');
+        } else {
+          wishlist.add(id);
+          btn.classList.add('active');
+          showToast('Saved to your private wishlist');
+        }
+        wishlistCount.textContent = wishlist.size;
+      });
+    });
+
+    // Filter Buttons in Best Sellers
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const productCards = document.querySelectorAll('.product-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+
+        productCards.forEach(card => {
+          const cat = card.getAttribute('data-category');
+          if (filter === 'all' || cat === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Quick View Modal Handlers
+    function openQuickView(id) {
+      const prod = catalog[id];
+      if (!prod) return;
+      currentQvId = id;
+
+      document.getElementById('qvTitle').textContent = prod.title;
+      document.getElementById('qvPrice').textContent = `₹${prod.price.toLocaleString('en-IN')}`;
+      document.getElementById('qvBtnPrice').textContent = `₹${prod.price.toLocaleString('en-IN')}`;
+      document.getElementById('qvDesc').textContent = prod.desc;
+      document.getElementById('qvImage').src = prod.img;
+      document.getElementById('qvBadge').textContent = prod.badge;
+
+      quickViewModal.classList.add('active');
+      document.body.classList.add('no-scroll');
+    }
+
+    function closeQuickView() {
+      quickViewModal.classList.remove('active');
+      document.body.classList.remove('no-scroll');
+    }
+
+    closeQuickViewBtn.addEventListener('click', closeQuickView);
+    quickViewModal.addEventListener('click', (e) => {
+      if (e.target === quickViewModal) closeQuickView();
+    });
+
+    document.querySelectorAll('.btn-quick-view').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const id = btn.getAttribute('data-product-id');
+        openQuickView(id);
+      });
+    });
+
+    document.querySelectorAll('.mobile-add-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const id = btn.getAttribute('data-product-id');
+        openQuickView(id);
+      });
+    });
+
+    // Quick Size Select on Card
+    document.querySelectorAll('[data-add-size]').forEach(sizeBtn => {
+      sizeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const card = sizeBtn.closest('.product-card');
+        const qvBtn = card.querySelector('.btn-quick-view');
+        const prodId = qvBtn.getAttribute('data-product-id');
+        const size = sizeBtn.getAttribute('data-add-size');
+        const prod = catalog[prodId];
+
+        if (prod) {
+          cart.push({
+            id: prodId,
+            title: prod.title,
+            price: prod.price,
+            size: size,
+            qty: 1,
+            img: prod.img
+          });
+          openCart();
+          showToast(`Added ${prod.title} (Size ${size}) to Bag`);
+        }
+      });
+    });
+
+    // Size Selection in Quick View Modal
+    document.querySelectorAll('.size-opt').forEach(opt => {
+      opt.addEventListener('click', () => {
+        document.querySelectorAll('.size-opt').forEach(o => o.classList.remove('active'));
+        opt.classList.add('active');
+      });
+    });
+
+    // Add to Bag from Quick View Modal
+    document.getElementById('qvAddToBagBtn').addEventListener('click', () => {
+      const prod = catalog[currentQvId];
+      const activeSize = document.querySelector('.size-opt.active') &bull; .textContent || 'M';
+      if (prod) {
+        cart.push({
+          id: currentQvId,
+          title: prod.title,
+          price: prod.price,
+          size: activeSize,
+          qty: 1,
+          img: prod.img
+        });
+        closeQuickView();
+        openCart();
+        showToast(`Added ${prod.title} to Shopping Bag`);
+      }
+    });
+
+    // Newsletter Submission
+    document.getElementById('newsletterForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = e.target.querySelector('input');
+      if (input.value) {
+        showToast('Thank you. You have been added to our private client list.');
+        input.value = '';
+      }
+    });
+
+    // Checkout button handler
+    document.getElementById('checkoutBtn').addEventListener('click', () => {
+      showToast('Proceeding to secure atelier checkout...');
+    });
+
+    // Initial Cart Render
+    renderCart();
+  </script>
+
+  <!-- Floating 3-Button Theme Switcher Dock -->
+  <nav class="theme-dock" aria-label="Theme switcher">
+    <a href="../index.html" class="theme-dock-btn home-btn" title="All Themes">&larr; SELECTOR</a>
+    <a href="../theme-1/index.html" class="theme-dock-btn active">THEME 1</a>
+    <a href="../theme-2/index.html" class="theme-dock-btn">THEME 2</a>
+    <a href="../theme-3/index.html" class="theme-dock-btn">THEME 3</a>
+  </nav>
+
+  <style>
+    .theme-dock {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 8px;
+      background: rgba(10, 10, 10, 0.94);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 40px;
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.5);
+      max-width: calc(100vw - 20px);
+    }
+    .theme-dock-btn {
+      padding: 8px 14px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border-radius: 30px;
+      color: rgba(255, 255, 255, 0.65);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .theme-dock-btn:hover {
+      color: #FFFFFF;
+      background: rgba(255, 255, 255, 0.15);
+    }
+    .theme-dock-btn.active {
+      background: #FFFFFF;
+      color: #0A0A0A;
+      box-shadow: 0 2px 10px rgba(255, 255, 255, 0.25);
+    }
+    .theme-dock-btn.home-btn {
+      padding: 8px 12px;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0;
+      margin-right: 2px;
+      color: #FFFFFF;
+    }
+    @media (max-width: 480px) {
+      .theme-dock {
+        bottom: 12px;
+        padding: 5px 6px;
+        gap: 3px;
+      }
+      .theme-dock-btn {
+        padding: 7px 9px;
+        font-size: 0.58rem;
+        letter-spacing: 0.08em;
+      }
+      .theme-dock-btn.home-btn {
+        padding: 7px 8px;
+      }
+    }
+  </style>
+</body>
+</html>

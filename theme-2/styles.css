@@ -1,0 +1,1168 @@
+/* ==========================================================================
+   THEME 02: SŪTRA TANTU — THE CRAFT & MATERIALITY EDITION
+   Contemporary Indian Craft / Handloom Materiality / Warm Earth System
+   Pure Vanilla CSS — Production Quality
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   01. DESIGN TOKENS & SYSTEM VARIABLES
+   -------------------------------------------------------------------------- */
+:root {
+  /* Warm Earth & Natural Material Palette */
+  --tantu-sand: #F5F1E8;
+  --tantu-parchment: #EBE3D3;
+  --tantu-linen: #DFD5C2;
+  --tantu-clay: #C46244;
+  --tantu-terracotta: #A8482D;
+  --tantu-madder: #7F311D;
+  --tantu-umber: #2C1F19;
+  --tantu-charcoal: #1E1612;
+  --tantu-gold: #C69E58;
+  --tantu-sage: #5A6655;
+  --tantu-cream: #FAF8F4;
+  --tantu-white: #FFFFFF;
+
+  /* Tactile Stitched Borders & Overlays */
+  --border-stitch: 1px dashed rgba(168, 72, 45, 0.35);
+  --border-warm: 1px solid rgba(44, 31, 25, 0.12);
+  --border-warm-strong: 1px solid rgba(44, 31, 25, 0.3);
+  --overlay-warm-dark: rgba(30, 22, 18, 0.65);
+
+  /* Typography */
+  --font-editorial: 'Fraunces', Georgia, serif;
+  --font-mono: 'Space Mono', 'Courier New', monospace;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+
+  /* Layout */
+  --container-max: 1440px;
+  --gutter: clamp(16px, 3.5vw, 48px);
+  --label-header-height: 76px;
+
+  /* Animation */
+  --ease-tactile: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* --------------------------------------------------------------------------
+   02. RESET & GLOBAL ARCHITECTURE
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--tantu-umber);
+  background-color: var(--tantu-sand);
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+  background-image: radial-gradient(rgba(44, 31, 25, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button, input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background-color: var(--tantu-terracotta);
+  color: var(--tantu-cream);
+}
+
+:focus-visible {
+  outline: 2px solid var(--tantu-clay);
+  outline-offset: 3px;
+}
+
+/* --------------------------------------------------------------------------
+   03. TYPOGRAPHY SYSTEM
+   -------------------------------------------------------------------------- */
+.font-tantu {
+  font-family: var(--font-editorial);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-editorial);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--tantu-umber);
+}
+
+.tantu-hero-title {
+  font-size: clamp(2.4rem, 6vw, 5.4rem);
+  line-height: 1.05;
+  font-weight: 300;
+  letter-spacing: -0.015em;
+  color: var(--tantu-umber);
+}
+
+.tantu-section-title {
+  font-size: clamp(2rem, 3.8vw, 3.4rem);
+  line-height: 1.12;
+  font-weight: 400;
+}
+
+.tantu-docket-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--tantu-terracotta);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(186, 79, 50, 0.08);
+  padding: 4px 10px;
+  border: 1px solid rgba(186, 79, 50, 0.25);
+}
+
+.tantu-lead {
+  font-size: clamp(0.95rem, 1.2vw, 1.18rem);
+  line-height: 1.7;
+  color: #4A3A32;
+  font-weight: 300;
+}
+
+/* --------------------------------------------------------------------------
+   04. CONTAINER & SECTION LAYOUT
+   -------------------------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+.section {
+  padding-top: clamp(60px, 8vw, 120px);
+  padding-bottom: clamp(60px, 8vw, 120px);
+  position: relative;
+}
+
+.section-stitch-divider {
+  width: 100%;
+  height: 1px;
+  border-bottom: var(--border-stitch);
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   05. BUTTONS & SPECIMEN SEALS
+   -------------------------------------------------------------------------- */
+.tantu-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 26px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s var(--ease-tactile);
+  min-height: 46px;
+  position: relative;
+}
+
+.tantu-btn-terracotta {
+  background-color: var(--tantu-terracotta);
+  color: var(--tantu-cream);
+  border: 1px solid var(--tantu-terracotta);
+}
+
+.tantu-btn-terracotta:hover {
+  background-color: var(--tantu-madder);
+  color: var(--tantu-white);
+  transform: translateY(-2px);
+}
+
+.tantu-btn-stitch {
+  background-color: transparent;
+  color: var(--tantu-umber);
+  border: 1px dashed var(--tantu-clay);
+}
+
+.tantu-btn-stitch:hover {
+  background-color: var(--tantu-parchment);
+  border-style: solid;
+}
+
+.tantu-btn-link {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--tantu-terracotta);
+  border-bottom: 1px dashed var(--tantu-terracotta);
+  padding-bottom: 3px;
+  transition: color 0.2s ease;
+}
+
+.tantu-btn-link:hover {
+  color: var(--tantu-madder);
+  border-bottom-style: solid;
+}
+
+/* --------------------------------------------------------------------------
+   06. ATELIER WEAVE TICKER (TOP BAR)
+   -------------------------------------------------------------------------- */
+.tantu-ticker-bar {
+  background-color: var(--tantu-umber);
+  color: var(--tantu-sand);
+  padding: 10px 0;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+  z-index: 500;
+}
+
+.tantu-ticker-track {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  white-space: nowrap;
+  animation: tantuTicker 34s linear infinite;
+}
+
+.tantu-ticker-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes tantuTicker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* --------------------------------------------------------------------------
+   07. TEXTILE LABEL HEADER (INNOVATIVE CONCEPT A)
+   -------------------------------------------------------------------------- */
+.tantu-header {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  background-color: rgba(245, 241, 232, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: var(--border-stitch);
+  transition: background-color 0.25s ease;
+}
+
+.tantu-nav-container {
+  height: var(--label-header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Atelier Brand Tag */
+.tantu-brand {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.tantu-brand-title {
+  font-family: var(--font-editorial);
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  color: var(--tantu-umber);
+  line-height: 1;
+}
+
+.tantu-brand-spec {
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--tantu-clay);
+  margin-top: 4px;
+}
+
+/* Weave Navigation Tabs */
+.tantu-nav-tabs {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .tantu-nav-tabs {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .tantu-nav-tab {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--tantu-umber);
+    padding: 6px 10px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+  }
+
+  .tantu-nav-tab:hover,
+  .tantu-nav-tab.active {
+    color: var(--tantu-terracotta);
+    border: 1px dashed var(--tantu-clay);
+    background-color: var(--tantu-parchment);
+  }
+}
+
+/* Header Action Seals */
+.tantu-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tantu-action-btn {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: var(--tantu-umber);
+  border: 1px solid rgba(44, 31, 25, 0.15);
+  background-color: var(--tantu-cream);
+  transition: all 0.2s ease;
+}
+
+.tantu-action-btn:hover {
+  border-color: var(--tantu-terracotta);
+  color: var(--tantu-terracotta);
+}
+
+.tantu-action-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.tantu-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 18px;
+  height: 18px;
+  background-color: var(--tantu-terracotta);
+  color: var(--tantu-cream);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* Mobile Toggle */
+.tantu-menu-btn {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid var(--tantu-clay);
+  background-color: var(--tantu-cream);
+}
+
+@media (min-width: 1024px) {
+  .tantu-menu-btn {
+    display: none;
+  }
+}
+
+.tantu-menu-btn span {
+  width: 20px;
+  height: 1.5px;
+  background-color: var(--tantu-umber);
+  transition: all 0.25s ease;
+}
+
+.tantu-menu-btn.active span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+
+.tantu-menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.tantu-menu-btn.active span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
+/* --------------------------------------------------------------------------
+   08. MOBILE DRAWER (THEME 2)
+   -------------------------------------------------------------------------- */
+.tantu-mobile-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  background-color: var(--tantu-sand);
+  z-index: 850;
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--label-header-height) + 24px) var(--gutter) 32px;
+  transform: translateX(-100%);
+  transition: transform 0.4s var(--ease-tactile);
+  overflow-y: auto;
+}
+
+.tantu-mobile-drawer.active {
+  transform: translateX(0);
+}
+
+.tantu-mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: auto;
+}
+
+.tantu-mobile-link {
+  font-family: var(--font-editorial);
+  font-size: 1.85rem;
+  color: var(--tantu-umber);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: var(--border-stitch);
+}
+
+.tantu-mobile-link .spec {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--tantu-clay);
+}
+
+/* --------------------------------------------------------------------------
+   09. ASYMMETRIC CRAFT HERO (INNOVATIVE CONCEPT B)
+   -------------------------------------------------------------------------- */
+.tantu-hero {
+  position: relative;
+  background-color: var(--tantu-sand);
+  border-bottom: var(--border-stitch);
+  overflow: hidden;
+}
+
+.tantu-hero-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: calc(100vh - var(--label-header-height) - 40px);
+}
+
+@media (min-width: 1024px) {
+  .tantu-hero-layout {
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+  }
+}
+
+.tantu-hero-story {
+  padding: clamp(32px, 5vw, 84px) var(--gutter);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tantu-hero-headline {
+  margin: 16px 0;
+}
+
+.tantu-hero-headline span.italic {
+  font-style: italic;
+  color: var(--tantu-terracotta);
+}
+
+.tantu-hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* The Overlapping Artisan Docket Card */
+.tantu-docket-card {
+  margin-top: clamp(28px, 4vw, 48px);
+  background-color: var(--tantu-parchment);
+  border: 1px dashed var(--tantu-clay);
+  padding: 20px;
+  position: relative;
+}
+
+.tantu-docket-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (min-width: 600px) {
+  .tantu-docket-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.docket-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.docket-label {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--tantu-clay);
+}
+
+.docket-val {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--tantu-umber);
+  margin-top: 2px;
+}
+
+/* Asymmetric Hero Visual with Sepia/Terracotta Tone */
+.tantu-hero-visual {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background-color: var(--tantu-linen);
+  overflow: hidden;
+  border-left: var(--border-stitch);
+}
+
+@media (min-width: 1024px) {
+  .tantu-hero-visual {
+    height: 100%;
+    min-height: 680px;
+  }
+}
+
+.tantu-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(0.35) contrast(1.1) brightness(0.96);
+  transition: transform 0.6s var(--ease-tactile);
+}
+
+.tantu-hero-visual:hover .tantu-hero-img {
+  transform: scale(1.03);
+}
+
+.tantu-swatch-dial {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(245, 241, 232, 0.92);
+  backdrop-filter: blur(8px);
+  border: 1px dashed var(--tantu-clay);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.swatch-chips {
+  display: flex;
+  gap: 8px;
+}
+
+.swatch-chip {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--tantu-umber);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.swatch-chip:hover, .swatch-chip.active {
+  transform: scale(1.15);
+  box-shadow: 0 0 0 2px var(--tantu-terracotta);
+}
+
+/* --------------------------------------------------------------------------
+   10. MATERIAL REGISTRY TRACK (INNOVATIVE CONCEPT C)
+   -------------------------------------------------------------------------- */
+.material-registry-section {
+  background-color: var(--tantu-parchment);
+  border-bottom: var(--border-stitch);
+}
+
+.registry-track {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 32px;
+}
+
+@media (min-width: 640px) {
+  .registry-track {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .registry-track {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.material-specimen-card {
+  background-color: var(--tantu-cream);
+  border: 1px solid rgba(44, 31, 25, 0.15);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s var(--ease-tactile);
+}
+
+.material-specimen-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--tantu-terracotta);
+  box-shadow: 0 12px 28px rgba(44, 31, 25, 0.08);
+}
+
+.specimen-code {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  color: var(--tantu-clay);
+  margin-bottom: 6px;
+}
+
+.specimen-title {
+  font-family: var(--font-editorial);
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+
+.specimen-meta-table {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: var(--border-stitch);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #55443B;
+}
+
+/* --------------------------------------------------------------------------
+   11. ASYMMETRIC PRODUCT CARDS (THEME 2)
+   -------------------------------------------------------------------------- */
+.tantu-products-section {
+  background-color: var(--tantu-sand);
+  border-bottom: var(--border-stitch);
+}
+
+.tantu-filter-strip {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  margin-bottom: 32px;
+  scrollbar-width: none;
+}
+
+.tantu-filter-strip::-webkit-scrollbar {
+  display: none;
+}
+
+.tantu-filter-tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 7px 16px;
+  background-color: var(--tantu-cream);
+  border: 1px dashed rgba(44, 31, 25, 0.2);
+  color: var(--tantu-umber);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tantu-filter-tag:hover,
+.tantu-filter-tag.active {
+  background-color: var(--tantu-terracotta);
+  color: var(--tantu-cream);
+  border-style: solid;
+  border-color: var(--tantu-terracotta);
+}
+
+.tantu-product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(12px, 3vw, 28px);
+}
+
+@media (min-width: 1024px) {
+  .tantu-product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tantu-product-card {
+  background-color: var(--tantu-cream);
+  border: 1px solid rgba(44, 31, 25, 0.12);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.25s var(--ease-tactile);
+}
+
+.tantu-product-card:hover {
+  border-color: var(--tantu-terracotta);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(44, 31, 25, 0.08);
+}
+
+.tantu-card-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background-color: var(--tantu-linen);
+}
+
+.tantu-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(0.25) contrast(1.08);
+  transition: transform 0.5s var(--ease-tactile);
+}
+
+.tantu-product-card:hover .tantu-card-media img {
+  transform: scale(1.04);
+}
+
+.tantu-index-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--tantu-cream);
+  border: 1px dashed var(--tantu-clay);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  color: var(--tantu-terracotta);
+}
+
+.tantu-card-body {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.tantu-card-title {
+  font-family: var(--font-editorial);
+  font-size: clamp(1rem, 1.3vw, 1.25rem);
+  line-height: 1.25;
+  color: var(--tantu-umber);
+}
+
+.tantu-card-spec-tag {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--tantu-clay);
+  line-height: 1.4;
+}
+
+.tantu-card-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.tantu-price {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--tantu-umber);
+}
+
+.tantu-old-price {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: #8C786E;
+  text-decoration: line-through;
+}
+
+.tantu-card-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 8px;
+}
+
+.tantu-card-btn {
+  padding: 8px;
+  background-color: var(--tantu-parchment);
+  border: 1px dashed var(--tantu-clay);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--tantu-umber);
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.tantu-card-btn:hover {
+  background-color: var(--tantu-terracotta);
+  color: var(--tantu-cream);
+  border-style: solid;
+}
+
+/* --------------------------------------------------------------------------
+   12. CRAFT TIMELINE (THE 48-HOUR WEAVING RITUAL)
+   -------------------------------------------------------------------------- */
+.tantu-timeline-section {
+  background-color: var(--tantu-cream);
+  border-bottom: var(--border-stitch);
+}
+
+.tantu-timeline-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 36px;
+}
+
+@media (min-width: 640px) {
+  .tantu-timeline-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .tantu-timeline-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.timeline-step {
+  padding: 20px;
+  background-color: var(--tantu-sand);
+  border: 1px dashed var(--tantu-clay);
+  display: flex;
+  flex-direction: column;
+}
+
+.step-num {
+  font-family: var(--font-editorial);
+  font-size: 2.2rem;
+  color: var(--tantu-terracotta);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.step-title {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+
+.step-desc {
+  font-size: 0.8rem;
+  color: #55443B;
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   13. TESTIMONIAL JOURNAL ENTRIES
+   -------------------------------------------------------------------------- */
+.tantu-journal-section {
+  background-color: var(--tantu-parchment);
+  border-bottom: var(--border-stitch);
+}
+
+.tantu-journal-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 36px;
+}
+
+@media (min-width: 768px) {
+  .tantu-journal-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.journal-card {
+  padding: 24px;
+  background-color: var(--tantu-cream);
+  border: 1px solid rgba(44, 31, 25, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.journal-quote {
+  font-family: var(--font-editorial);
+  font-size: 1.18rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--tantu-umber);
+  margin-bottom: 16px;
+}
+
+.journal-author {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--tantu-clay);
+  border-top: var(--border-stitch);
+  padding-top: 10px;
+}
+
+/* --------------------------------------------------------------------------
+   14. NEWSLETTER & FOOTER (THEME 2)
+   -------------------------------------------------------------------------- */
+.tantu-newsletter {
+  background-color: var(--tantu-sand);
+  border-bottom: var(--border-stitch);
+  text-align: center;
+}
+
+.tantu-footer {
+  background-color: var(--tantu-charcoal);
+  color: var(--tantu-sand);
+  padding-top: clamp(60px, 8vw, 100px);
+  padding-bottom: 32px;
+}
+
+.tantu-footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .tantu-footer-grid {
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+    gap: 32px;
+  }
+}
+
+.tantu-footer-brand-title {
+  font-family: var(--font-editorial);
+  font-size: 2rem;
+  color: var(--tantu-sand);
+}
+
+.tantu-footer-desc {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: #B5A79E;
+  margin-top: 8px;
+}
+
+.tantu-footer-col-title {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--tantu-gold);
+  margin-bottom: 16px;
+}
+
+.tantu-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tantu-footer-link {
+  font-size: 0.8rem;
+  color: #CFC5BD;
+  transition: color 0.2s ease;
+}
+
+.tantu-footer-link:hover {
+  color: var(--tantu-cream);
+}
+
+.tantu-footer-bottom {
+  padding-top: 24px;
+  border-top: 1px solid rgba(245, 241, 232, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: #8C7C73;
+}
+
+@media (min-width: 768px) {
+  .tantu-footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   15. THEME SWITCHER FLOATING PILL
+   -------------------------------------------------------------------------- */
+/* Floating 3-Button Theme Switcher Dock */
+.theme-dock {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  background: rgba(30, 20, 16, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(186, 79, 50, 0.45);
+  border-radius: 40px;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.5);
+  max-width: calc(100vw - 20px);
+}
+
+.theme-dock-btn {
+  padding: 8px 14px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-radius: 30px;
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.theme-dock-btn:hover {
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.theme-dock-btn.active {
+  background: var(--tantu-terracotta);
+  color: #FFFFFF;
+  box-shadow: 0 2px 10px rgba(186, 79, 50, 0.4);
+}
+
+.theme-dock-btn.home-btn {
+  padding: 8px 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+  margin-right: 2px;
+  color: var(--tantu-gold);
+}
+
+@media (max-width: 480px) {
+  .theme-dock {
+    bottom: 12px;
+    padding: 5px 6px;
+    gap: 3px;
+  }
+  .theme-dock-btn {
+    padding: 7px 9px;
+    font-size: 0.58rem;
+    letter-spacing: 0.08em;
+  }
+  .theme-dock-btn.home-btn {
+    padding: 7px 8px;
+  }
+}
+
+/* Toast */
+.tantu-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: var(--tantu-umber);
+  color: var(--tantu-sand);
+  border: 1px dashed var(--tantu-clay);
+  padding: 12px 20px;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  z-index: 1100;
+  transform: translateY(120%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.tantu-toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
