@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SŪTRA ATELIER — Choose Your Theme</title>
+  <meta name="description" content="Explore three bespoke visual directions crafted for SŪTRA ATELIER: Theme 1 Monochrome Editorial, Theme 2 Craft & Materiality, and Theme 3 Haute Couture Salon.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       THEME SHOWCASE GATEWAY
+       Minimal, High-Fashion & Focused on 3 Theme Buttons
+       ========================================================================== */
+    :root {
+      --bg-portal: #0C080A;
+      --surface-card: #140E12;
+      --surface-hover: #1A1217;
+      --border-portal: rgba(255, 255, 255, 0.12);
+      --text-main: #FAF7F2;
+      --text-muted: #A0949B;
+      --gold-accent: #D4AF37;
+      --terracotta-accent: #BA4F32;
+      --mono-accent: #FFFFFF;
+      --gutter: clamp(16px, 4vw, 56px);
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'Space Mono', monospace;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-portal);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-image: 
+        radial-gradient(circle at 20% 15%, rgba(186, 79, 50, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 65%, rgba(212, 175, 55, 0.07) 0%, transparent 45%);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1360px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: var(--gutter);
+      padding-right: var(--gutter);
+    }
+
+    /* Header */
+    .portal-header {
+      padding: clamp(20px, 3vw, 32px) 0 18px;
+      border-bottom: 1px solid var(--border-portal);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .portal-brand-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .portal-tagline {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold-accent);
+      margin-top: 3px;
+    }
+
+    .portal-badge {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-portal);
+      border-radius: 30px;
+      color: var(--text-muted);
+    }
+
+    /* Hero Section */
+    .portal-hero {
+      padding: clamp(36px, 5vw, 64px) 0 clamp(24px, 3vw, 40px);
+      text-align: center;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .portal-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gold-accent);
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+
+    .portal-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(2.2rem, 5vw, 4.4rem);
+      line-height: 1.08;
+      font-weight: 300;
+      letter-spacing: -0.01em;
+      margin-bottom: 14px;
+    }
+
+    .portal-headline span.italic {
+      font-style: italic;
+      color: #E8DAD4;
+    }
+
+    .portal-desc {
+      font-size: clamp(0.95rem, 1.2vw, 1.12rem);
+      line-height: 1.65;
+      color: var(--text-muted);
+      font-weight: 300;
+      margin-bottom: 28px;
+    }
+
+    /* Primary Quick 3-Button Bar */
+    .quick-theme-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: clamp(36px, 5vw, 60px);
+    }
+
+    .theme-quick-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 24px;
+      font-family: var(--font-mono);
+      font-size: clamp(0.72rem, 1vw, 0.8rem);
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      border-radius: 40px;
+      border: 1px solid var(--border-portal);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-main);
+      transition: all 0.25s ease;
+    }
+
+    .theme-quick-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .theme-quick-btn.btn-theme-1:hover {
+      background: #FFFFFF;
+      color: #000000;
+      border-color: #FFFFFF;
+    }
+
+    .theme-quick-btn.btn-theme-2:hover {
+      background: var(--terracotta-accent);
+      color: #FFFFFF;
+      border-color: var(--terracotta-accent);
+    }
+
+    .theme-quick-btn.btn-theme-3:hover {
+      background: var(--gold-accent);
+      color: #140A10;
+      border-color: var(--gold-accent);
+    }
+
+    .theme-quick-btn .btn-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    /* 3 Theme Cards Grid */
+    .themes-showcase-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      margin-bottom: clamp(48px, 6vw, 84px);
+    }
+
+    @media (min-width: 900px) {
+      .themes-showcase-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+    }
+
+    .theme-card {
+      background-color: var(--surface-card);
+      border: 1px solid var(--border-portal);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .theme-card:hover {
+      background-color: var(--surface-hover);
+      border-color: rgba(255, 255, 255, 0.25);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.55);
+    }
+
+    .theme-card-1:hover { border-color: rgba(255, 255, 255, 0.6); }
+    .theme-card-2:hover { border-color: rgba(186, 79, 50, 0.7); }
+    .theme-card-3:hover { border-color: rgba(212, 175, 55, 0.7); }
+
+    .card-top-strip {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border-portal);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .theme-number {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+    }
+
+    .theme-status-tag {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border: 1px solid var(--border-portal);
+      border-radius: 20px;
+    }
+
+    .card-preview-media {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      background-color: #000000;
+    }
+
+    .card-preview-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .theme-card:hover .card-preview-media img {
+      transform: scale(1.05);
+    }
+
+    .card-preview-media.mono img {
+      filter: grayscale(100%) contrast(110%);
+    }
+
+    .card-preview-media.tantu img {
+      filter: sepia(0.3) contrast(1.1) brightness(0.95);
+    }
+
+    .card-preview-media.couture img {
+      filter: contrast(1.12) brightness(0.85);
+    }
+
+    .preview-badge-overlay {
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
+      padding: 5px 12px;
+      background: rgba(12, 8, 10, 0.88);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border-portal);
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .card-content {
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .theme-title {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      line-height: 1.15;
+      margin-bottom: 6px;
+      color: var(--text-main);
+    }
+
+    .theme-subtitle {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .theme-desc {
+      font-size: 0.86rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+      font-weight: 300;
+      margin-bottom: 24px;
+      flex: 1;
+    }
+
+    .btn-explore {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border: 1px solid var(--border-portal);
+      transition: all 0.25s ease;
+      background-color: rgba(255, 255, 255, 0.04);
+      cursor: pointer;
+    }
+
+    .theme-card-1 .btn-explore:hover {
+      background-color: var(--mono-accent);
+      color: #000000;
+      border-color: var(--mono-accent);
+    }
+
+    .theme-card-2 .btn-explore:hover {
+      background-color: var(--terracotta-accent);
+      color: #FFFFFF;
+      border-color: var(--terracotta-accent);
+    }
+
+    .theme-card-3 .btn-explore:hover {
+      background-color: var(--gold-accent);
+      color: #140A10;
+      border-color: var(--gold-accent);
+    }
+
+    /* Footer */
+    .portal-footer {
+      margin-top: auto;
+      padding: 32px 0;
+      border-top: 1px solid var(--border-portal);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Header -->
+    <header class="portal-header">
+      <div>
+        <div class="portal-brand-title">SŪTRA ATELIER</div>
+        <div class="portal-tagline">DIGITAL FLAGSHIP EXPERIENCE</div>
+      </div>
+      <div class="portal-badge">
+        AUTUMN / FESTIVE 2026
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="portal-hero">
+      <span class="portal-eyebrow">Visual Direction Showcase</span>
+      <h1 class="portal-headline">
+        Select Your <span class="italic">Website Theme</span>
+      </h1>
+      <p class="portal-desc">
+        Three distinct luxury design concepts crafted for SŪTRA ATELIER. Select any theme below to enter its complete, fully responsive flagship store.
+      </p>
+
+      <!-- 3 Instant Action Buttons -->
+      <nav class="quick-theme-bar" aria-label="Direct theme selection">
+        <a href="theme-1/index.html" class="theme-quick-btn btn-theme-1">
+          <span class="btn-dot" style="background:#FFFFFF;"></span>
+          <span>Theme 1: Monochrome</span>
+        </a>
+        <a href="theme-2/index.html" class="theme-quick-btn btn-theme-2">
+          <span class="btn-dot" style="background:var(--terracotta-accent);"></span>
+          <span>Theme 2: Sūtra Tantu</span>
+        </a>
+        <a href="theme-3/index.html" class="theme-quick-btn btn-theme-3">
+          <span class="btn-dot" style="background:var(--gold-accent);"></span>
+          <span>Theme 3: La Maison Sūtra</span>
+        </a>
+      </nav>
+    </section>
+
+    <!-- 3 Theme Cards Showcase -->
+    <main class="themes-showcase-grid">
+      
+      <!-- Theme Card 01 -->
+      <article class="theme-card theme-card-1">
+        <div class="card-top-strip">
+          <span class="theme-number">THEME // 01</span>
+          <span class="theme-status-tag" style="color:#FFFFFF; border-color:rgba(255,255,255,0.3);">MONOCHROME</span>
+        </div>
+        
+        <div class="card-preview-media mono">
+          <img src="images/hero.jpg" alt="Theme 01 Monochrome Editorial Preview">
+          <div class="preview-badge-overlay">Monochrome Noir &amp; Ivory</div>
+        </div>
+
+        <div class="card-content">
+          <h2 class="theme-title">01 — Monochrome</h2>
+          <div class="theme-subtitle" style="color:#FFFFFF;">Architectural Editorial</div>
+          
+          <p class="theme-desc">
+            A strict black and white fine-art editorial aesthetic. Featuring generous whitespace, delicate serif headlines, fluid grids, slide-out cart drawer, and museum-grade photography.
+          </p>
+
+          <a href="theme-1/index.html" class="btn-explore">
+            <span>Explore Theme 1</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Theme Card 02 -->
+      <article class="theme-card theme-card-2">
+        <div class="card-top-strip">
+          <span class="theme-number">THEME // 02</span>
+          <span class="theme-status-tag" style="color:var(--terracotta-accent); border-color:rgba(186,79,50,0.3);">RAW CRAFT</span>
+        </div>
+        
+        <div class="card-preview-media tantu">
+          <img src="images/angrakha.jpg" alt="Theme 02 Sūtra Tantu Preview">
+          <div class="preview-badge-overlay" style="color:var(--terracotta-accent);">Terracotta &bull; Sand &bull; Handloom</div>
+        </div>
+
+        <div class="card-content">
+          <h2 class="theme-title">02 — Sūtra Tantu</h2>
+          <div class="theme-subtitle" style="color:var(--terracotta-accent);">Craft &amp; Materiality</div>
+          
+          <p class="theme-desc">
+            Raw Indian luxury rooted in handcrafted materials, block-printed textures, organic tussar, madder dyes, and an interactive tactile material laboratory with pit-loom weaving rituals.
+          </p>
+
+          <a href="theme-2/index.html" class="btn-explore">
+            <span>Explore Theme 2</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Theme Card 03 -->
+      <article class="theme-card theme-card-3">
+        <div class="card-top-strip">
+          <span class="theme-number">THEME // 03</span>
+          <span class="theme-status-tag" style="color:var(--gold-accent); border-color:rgba(212,175,55,0.3);">HAUTE COUTURE</span>
+        </div>
+        
+        <div class="card-preview-media couture">
+          <img src="images/editorial_wide.jpg" alt="Theme 03 La Maison Sūtra Preview">
+          <div class="preview-badge-overlay" style="color:var(--gold-accent);">Imperial Plum &bull; Gold Zari</div>
+        </div>
+
+        <div class="card-content">
+          <h2 class="theme-title">03 — La Maison Sūtra</h2>
+          <div class="theme-subtitle" style="color:var(--gold-accent);">Haute Couture Salon</div>
+          
+          <p class="theme-desc">
+            An avant-garde runway exhibition experience. Statuesque Roman masthead, imperial plum and beaten gold zari, full-bleed editorial hero, runway catalogue cards, and private salon booking.
+          </p>
+
+          <a href="theme-3/index.html" class="btn-explore">
+            <span>Explore Theme 3</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="portal-footer">
+      <div>&copy; 2026 SŪTRA ATELIER PVT. LTD. ALL RIGHTS RESERVED.</div>
+      <div>PURE HTML &amp; VANILLA CSS &bull; PRODUCTION QUALITY</div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
